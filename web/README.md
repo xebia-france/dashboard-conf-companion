@@ -2,27 +2,46 @@
 
 [Conf Companion Dashboard](https://xebia-france.github.io/dashboard-conf-companion/#/)
 
-## Build Setup
+## How To
+
+### Install dependencies
 
 ``` bash
-# install dependencies
 npm i
+```
 
-# serve with hot reload at [localhost:8080](http://localhost:8080)
+### Serve with hot reload at [localhost:8080](http://localhost:8080)
+
+```bash
 npm run dev
+```
 
-# build for production with minification
+### Build for production with minification
+
+```bash
 npm run build
+```
 
-# build for production and view the bundle analyzer report
+### Build for production and view the bundle analyzer report
+
+```bash
 npm run build --report
+```
 
-# run unit tests
+### Run unit tests
+
+```bash
 npm run unit
+```
 
-# run all tests
+### Run all tests
+
+```bash
 npm test
+```
 
-# deploy to gh-pages
+### Deploy to gh-pages
+
+```bash
 npm run deploy
 ```
