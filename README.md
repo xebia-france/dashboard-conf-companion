@@ -1,2 +1,3 @@
-# dashboard-conf-companion
-Conf Companion web app to show marks and comments
+# Dashboard for Conf Companion Data
+
+See [web](web/) for web app
