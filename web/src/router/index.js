@@ -1,15 +1,18 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Answers from '@/components/Answers';
 
+// noinspection NpmUsedModulesInstalled
+import Rating from '@/components/rating/Rating';
+
+// noinspection JSUnresolvedFunction
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'answers',
-      component: Answers,
+      name: 'rating',
+      component: Rating,
     },
   ],
 });
