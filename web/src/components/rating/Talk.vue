@@ -7,9 +7,9 @@
     <div class="graph">
       <bar-chart :data="graphData"></bar-chart>
     </div>
-    {{talk.length}} comment(s)
+    {{comments.length}} comment(s)
     <ul class="comment-list">
-      <li class="comment" v-for="c in talk">
+      <li class="comment" v-for="c in comments">
         {{c.comment}}
       </li>
     </ul>
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+  import _ from 'lodash';
   import BarChart from '../BarChart';
 
   export default {
@@ -34,6 +35,11 @@
         ],
       },
     }),
+    computed: {
+      comments: function () {
+        return _.filter(this.talk, t => !_.isEmpty(t.comment));
+      }
+    },
     components: {BarChart},
   };
 </script>

@@ -43,7 +43,8 @@
   }
 
   .rating {
-    height: 86vh;
+    height: 100%;
+    min-height: 86vh;
   }
 
   .talk {
