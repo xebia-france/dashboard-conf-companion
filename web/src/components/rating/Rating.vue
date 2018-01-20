@@ -77,7 +77,6 @@
           const r = rating.val();
           this.setParticipantCount(r);
           this.transformRating(r);
-          debugger;
           this.setRatingCount();
           this.setTalkName();
         },
