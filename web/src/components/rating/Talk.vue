@@ -5,7 +5,7 @@
       {{talk.length}} answer(s)
     </div>
     <div class="graph">
-      <bar-chart :data="graphData"></bar-chart>
+      <bar-chart :data="graph"/>
     </div>
     {{comments.length}} comment(s)
     <ul class="comment-list">
@@ -23,22 +23,28 @@
   export default {
     name: 'talk',
     props: ['talk'],
-    data: () => ({
-      graphData: {
-        labels: ['1', '2', '3', '4', '5'],
-        datasets: [
-          {
-            label: '# of vote(s)',
-            backgroundColor: '#c7b299',
-            data: [0, 0, 0, 3, 5],
-          },
-        ],
-      },
-    }),
     computed: {
-      comments: function () {
+      comments() {
         return _.filter(this.talk, t => !_.isEmpty(t.comment));
-      }
+      },
+      graph() {
+        return {
+          labels: ['1', '2', '3', '4', '5'],
+          datasets: [
+            {
+              label: '# of vote',
+              backgroundColor: '#c7b299',
+              data: [
+                _.filter(this.talk, t => t.mark === 1).length,
+                _.filter(this.talk, t => t.mark === 2).length,
+                _.filter(this.talk, t => t.mark === 3).length,
+                _.filter(this.talk, t => t.mark === 4).length,
+                _.filter(this.talk, t => t.mark === 5).length,
+              ],
+            },
+          ],
+        };
+      },
     },
     components: {BarChart},
   };
