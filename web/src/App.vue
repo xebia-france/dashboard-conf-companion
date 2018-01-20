@@ -3,7 +3,7 @@
     <header></header>
     <section id="body">
       <div class="separator"></div>
-      <router-view></router-view>
+      <router-view/>
     </section>
   </div>
 </template>
