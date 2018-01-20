@@ -1,7 +1,7 @@
 <template>
   <div class="talk">
     <div class="title">
-      <h3>TODO talk'name</h3>
+      <h3>{{talk.title}}</h3>
       {{talk.length}} answer(s)
     </div>
     <div class="graph">
@@ -25,7 +25,7 @@
     props: ['talk'],
     computed: {
       comments() {
-        return _.filter(this.talk, t => !_.isEmpty(t.comment));
+        return _.filter(this.talk.rating, r => !_.isEmpty(r.comment));
       },
       graph() {
         return {
@@ -35,11 +35,11 @@
               label: '# of vote',
               backgroundColor: '#c7b299',
               data: [
-                _.filter(this.talk, t => t.mark === 1).length,
-                _.filter(this.talk, t => t.mark === 2).length,
-                _.filter(this.talk, t => t.mark === 3).length,
-                _.filter(this.talk, t => t.mark === 4).length,
-                _.filter(this.talk, t => t.mark === 5).length,
+                _.filter(this.talk.rating, t => t.mark === 1).length,
+                _.filter(this.talk.rating, t => t.mark === 2).length,
+                _.filter(this.talk.rating, t => t.mark === 3).length,
+                _.filter(this.talk.rating, t => t.mark === 4).length,
+                _.filter(this.talk.rating, t => t.mark === 5).length,
               ],
             },
           ],
@@ -58,8 +58,8 @@
 
   .graph {
     margin: 10px auto;
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
   }
 
   .title {

@@ -23,11 +23,12 @@
       ratingCount: 0,
       participantCount: 0,
       talks: [],
+      schedule: [],
     }),
     methods: {
       setRatingCount() {
         _.each(this.talks, (t) => {
-          this.ratingCount += t.length;
+          this.ratingCount += t.rating.length;
         });
       },
       setParticipantCount(conf) {
@@ -37,6 +38,24 @@
         }));
         this.participantCount = Object.keys(participants).length;
       },
+      setTalkName() {
+        if (_.isEmpty(this.talks)) {
+          return;
+        }
+        _.each(this.talks, (t, i) => {
+          this.talks[i].title = _.find(this.schedule, t1 => t.id === t1.id).title;
+        });
+      },
+      transformRating(conf) {
+        _.each(Object.keys(conf), k => this.talks.push({id: k, rating: _.toArray(conf[k])}));
+      },
+    },
+    created() {
+      this.$http.get('static/schedule.json')
+        .then((res) => {
+          this.schedule = res.body;
+          this.setTalkName();
+        });
     },
     firebase: {
       rating: {
@@ -46,8 +65,9 @@
           const r = rating.val();
           const conf = r[Object.keys(r)[0]];
           this.setParticipantCount(conf);
-          this.talks = _.map(_.toArray(conf), t => _.toArray(t));
+          this.transformRating(conf);
           this.setRatingCount();
+          this.setTalkName();
         },
       },
     },
