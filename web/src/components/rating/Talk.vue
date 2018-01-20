@@ -10,7 +10,12 @@
     {{comments.length}} comment(s)
     <ul class="comment-list">
       <li class="comment" v-for="c in comments">
-        {{c.comment}}
+        <table>
+          <tr>
+            <td class="badge"><span v-if="c.mark">{{c.mark}}</span></td>
+            <td>{{c.comment}}</td>
+          </tr>
+        </table>
       </li>
     </ul>
   </div>
@@ -25,7 +30,7 @@
     props: ['talk'],
     computed: {
       comments() {
-        return _.filter(this.talk.rating, r => !_.isEmpty(r.comment));
+        return _.orderBy(_.filter(this.talk.rating, r => !_.isEmpty(r.comment)), 'mark', ['desc']);
       },
       graph() {
         return {
@@ -74,5 +79,19 @@
     background-color: #f1f1f1;
     padding: 10px;
     margin-bottom: 10px;
+  }
+
+  .badge {
+    span {
+      background-color: #6C1D5F;
+      color: white;
+      display: block;
+      height: 25px;
+      width: 25px;
+      border-radius: 100%;
+      margin-right: 10px;
+      text-align: center;
+      line-height: 25px;
+    }
   }
 </style>

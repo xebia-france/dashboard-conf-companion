@@ -55,8 +55,8 @@
 
     #body {
       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-      width: 90%;
-      margin: -50px auto;
+      width: 95%;
+      margin: -50px auto 10px auto;
       background-color: #ffffff;
       max-width: 800px;
 
