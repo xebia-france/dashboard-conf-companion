@@ -71,13 +71,13 @@
     },
     firebase: {
       rating: {
-        source: Database.ref('rating'),
+        source: Database.ref('rating/xke-20180108/'),
         asObject: true,
         readyCallback(rating) {
           const r = rating.val();
-          const conf = r[Object.keys(r)[0]];
-          this.setParticipantCount(conf);
-          this.transformRating(conf);
+          this.setParticipantCount(r);
+          this.transformRating(r);
+          debugger;
           this.setRatingCount();
           this.setTalkName();
         },
