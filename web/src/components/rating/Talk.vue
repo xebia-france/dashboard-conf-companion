@@ -2,7 +2,7 @@
   <div class="talk">
     <div class="title">
       <h3>{{talk.title}}</h3>
-      {{talk.length}} answer(s)
+      {{talk.rating.length}} answer(s)
     </div>
     <div class="graph">
       <bar-chart :data="graph"/>
