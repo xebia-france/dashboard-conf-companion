@@ -32,6 +32,8 @@
     top: 25%;
     left: 0;
     right: 0;
+    background-color: #ffffff;
+    padding: 20px;
   }
 
   p {
