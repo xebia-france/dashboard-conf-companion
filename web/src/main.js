@@ -21,9 +21,15 @@ new Vue({
       if (user && user.email.endsWith('xebia.fr')) {
         this.$router.push('/');
       } else {
-        Firebase.auth().signOut().then(() => {
+        if (user) {
+          user.delete().then(() => {
+            Firebase.auth().signOut().then(() => {
+              this.$router.push('/auth');
+            });
+          });
+        } else {
           this.$router.push('/auth');
-        });
+        }
       }
     });
   },
