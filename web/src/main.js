@@ -18,10 +18,12 @@ new Vue({
   components: {App},
   beforeCreate() {
     Firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
+      if (user && user.email.endsWith('xebia.fr')) {
         this.$router.push('/');
       } else {
-        this.$router.push('/auth');
+        Firebase.auth().signOut().then(() => {
+          this.$router.push('/auth');
+        });
       }
     });
   },
