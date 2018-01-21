@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <header></header>
-    <section id="body">
-      <div class="separator"></div>
       <router-view/>
-    </section>
   </div>
 </template>
 
@@ -15,8 +11,6 @@
 </script>
 
 <style lang="scss">
-  $main-color: #2c374c;
-
   body {
     margin: 0;
     padding: 0;
@@ -44,27 +38,5 @@
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-
-  #app {
-    header {
-      background-color: $main-color;
-      width: 100%;
-      height: 125px;
-    }
-
-    #body {
-      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-      width: 95%;
-      margin: -50px auto 10px auto;
-      background-color: #ffffff;
-      max-width: 800px;
-
-      .separator {
-        height: 10px;
-        width: 100%;
-        background-color: lighten($main-color, 30%);
-      }
-    }
   }
 </style>

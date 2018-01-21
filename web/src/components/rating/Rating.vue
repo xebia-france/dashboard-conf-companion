@@ -1,29 +1,35 @@
 <template>
-  <div class="rating">
-    <h1>Feedback XKE</h1>
-    <p>{{participantCount}} participant(s)</p>
-    <p>{{ratingCount}} answer(s)</p>
-    <transition name="fade">
-      <ul v-if="loaded">
-        <li class="talk" v-for="talk in talks">
-          <talk :talk="talk"/>
-        </li>
-      </ul>
-    </transition>
-    <transition name="fade">
-      <div v-if="!loaded" class="sk-folding-cube">
-        <div class="sk-cube1 sk-cube"></div>
-        <div class="sk-cube2 sk-cube"></div>
-        <div class="sk-cube4 sk-cube"></div>
-        <div class="sk-cube3 sk-cube"></div>
+  <div>
+    <header></header>
+    <section id="body">
+      <div class="separator"></div>
+      <div class="rating">
+        <h1>Feedback XKE</h1>
+        <p>{{participantCount}} participant(s)</p>
+        <p>{{ratingCount}} answer(s)</p>
+        <transition name="fade">
+          <ul v-if="loaded">
+            <li class="talk" v-for="talk in talks">
+              <talk :talk="talk"/>
+            </li>
+          </ul>
+        </transition>
+        <transition name="fade">
+          <div v-if="!loaded" class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+          </div>
+        </transition>
       </div>
-    </transition>
+    </section>
   </div>
 </template>
 
 <script>
   import _ from 'lodash';
-  import Database from '../../Database';
+  import Firebase from '../../Firebase';
   import Talk from './Talk';
 
   export default {
@@ -71,7 +77,7 @@
     },
     firebase: {
       rating: {
-        source: Database.ref('rating/xke-20180108/'),
+        source: Firebase.database().ref('rating/xke-20180108/'),
         asObject: true,
         readyCallback(rating) {
           const r = rating.val();
@@ -86,6 +92,8 @@
 </script>
 
 <style scoped lang="scss">
+  $main-color: #2c374c;
+
   h1 {
     margin-top: 20px;
   }
@@ -105,6 +113,26 @@
 
   .fade-enter, .fade-leave-to {
     opacity: 0;
+  }
+
+  header {
+    background-color: $main-color;
+    width: 100%;
+    height: 125px;
+  }
+
+  #body {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    width: 95%;
+    margin: -50px auto 10px auto;
+    background-color: #ffffff;
+    max-width: 800px;
+
+    .separator {
+      height: 10px;
+      width: 100%;
+      background-color: lighten($main-color, 30%);
+    }
   }
 
   .sk-folding-cube {
