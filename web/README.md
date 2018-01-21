@@ -1,47 +1,50 @@
 # Dashboard for Conf Companion Data (Web app) 
 
-[Conf Companion Dashboard](https://xebia-france.github.io/dashboard-conf-companion/#/)
+[Conf Companion](https://conf-companion.firebaseapp.com)
 
 ## How To
 
-### Install dependencies
+### Dependencies
 
 ``` bash
-npm i
+$ npm i
 ```
 
-### Serve with hot reload at [localhost:8080](http://localhost:8080)
+### Development with hot reload
 
 ```bash
-npm run dev
+$ npm run dev
 ```
 
-### Build for production with minification
+### Production with optimisation
 
 ```bash
-npm run build
+$ npm run build
 ```
 
-### Build for production and view the bundle analyzer report
+### Production with optimisation + analyzer report
 
 ```bash
-npm run build --report
+$ npm run build --report
 ```
 
-### Run unit tests
+### UT
 
 ```bash
-npm run unit
+$ npm run unit
 ```
 
-### Run all tests
+### UT + TI
 
 ```bash
-npm test
+$ npm test
 ```
 
-### Deploy to gh-pages
+### Deploy to Firebase Hosting
 
 ```bash
-npm run deploy
+# You need to be logged
+$ node_modules/.bin/firebase login
+# Deploy
+$ npm run deploy
 ```
