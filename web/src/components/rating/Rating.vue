@@ -8,11 +8,12 @@
         <p>{{participantCount}} participant(s)</p>
         <p>{{ratingCount}} answer(s)</p>
         <transition name="fade">
-          <ul v-if="loaded">
+          <ul v-if="loaded && talks.length>0">
             <li class="talk" v-for="talk in talks">
               <talk :talk="talk"/>
             </li>
           </ul>
+          <p class="not-available" v-if="loaded && talks.length === 0">No feedback available yet.</p>
         </transition>
         <transition name="fade">
           <div v-if="!loaded" class="sk-folding-cube">
@@ -68,23 +69,28 @@
         _.each(Object.keys(conf), k => this.talks.push({id: k, rating: _.toArray(conf[k])}));
       },
     },
-    created() {
-      this.$http.get('static/schedule.json')
-        .then((res) => {
-          this.schedule = res.body;
-          this.setTalkName();
-        });
-    },
     firebase: {
-      rating: {
-        source: Firebase.database().ref('rating/xke-20180108/'),
-        asObject: true,
-        readyCallback(rating) {
-          const r = rating.val();
-          this.setParticipantCount(r);
-          this.transformRating(r);
-          this.setRatingCount();
-          this.setTalkName();
+      conferences: {
+        source: Firebase.database().ref('rating/'),
+        readyCallback(conferences) {
+          const dBConferences = conferences.val();
+          if (Object.keys(dBConferences).length > 0) {
+            const conferenceId = Object.keys(dBConferences)[Object.keys(dBConferences).length - 1];
+            this.$http.get(`static/${conferenceId}.json`)
+              .then((res) => {
+                this.schedule = res.body;
+                this.setTalkName();
+
+                const conference = dBConferences[conferenceId];
+                this.setParticipantCount(conference);
+                this.transformRating(conference);
+                this.setRatingCount();
+                this.setTalkName();
+              })
+              .catch(() => {
+                this.loaded = true;
+              });
+          }
         },
       },
     },
@@ -133,6 +139,10 @@
       width: 100%;
       background-color: lighten($main-color, 30%);
     }
+  }
+
+  .not-available {
+    margin-top: 20%;
   }
 
   .sk-folding-cube {

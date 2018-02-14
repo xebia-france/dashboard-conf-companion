@@ -20,7 +20,7 @@ export default new Router({
       component: Auth,
     },
     {
-      path: 'rating',
+      path: '/rating',
       name: 'rating',
       component: Rating,
     },
