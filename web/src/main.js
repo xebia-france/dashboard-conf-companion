@@ -19,7 +19,7 @@ new Vue({
   beforeCreate() {
     Firebase.auth().onAuthStateChanged((user) => {
       if (user && user.email.endsWith('xebia.fr')) {
-        this.$router.push('/');
+        this.$router.push(this.$route.fullPath);
       } else if (user) {
         user.delete().then(() => {
           Firebase.auth().signOut().then(() => {

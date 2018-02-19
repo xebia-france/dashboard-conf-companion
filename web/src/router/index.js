@@ -24,5 +24,10 @@ export default new Router({
       name: 'rating',
       component: Rating,
     },
+    {
+      path: '/rating/:id',
+      component: Rating,
+      props: true,
+    },
   ],
 });

@@ -36,6 +36,7 @@
   export default {
     name: 'rating',
     components: {Talk},
+    props: ['id'],
     data: () => ({
       ratingCount: 0,
       participantCount: 0,
@@ -75,7 +76,10 @@
         readyCallback(conferences) {
           const dBConferences = conferences.val();
           if (Object.keys(dBConferences).length > 0) {
-            const conferenceId = Object.keys(dBConferences)[Object.keys(dBConferences).length - 1];
+            let conferenceId = this.id;
+            if (!conferenceId) {
+              conferenceId = Object.keys(dBConferences)[Object.keys(dBConferences).length - 1];
+            }
             this.$http.get(`static/${conferenceId}.json`)
               .then((res) => {
                 this.schedule = res.body;
