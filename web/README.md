@@ -40,6 +40,10 @@ $ npm run unit
 $ npm test
 ```
 
+### Configure Firebase application
+
+Edit file [src/Firebase.js](https://github.com/xebia-france/dashboard-conf-companion/blob/master/web/src/Firebase.js) and add your application configuration.
+
 ### Deploy to Firebase Hosting
 
 ```bash
