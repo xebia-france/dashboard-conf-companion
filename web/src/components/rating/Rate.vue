@@ -6,47 +6,30 @@
       <div class="rating">
         <h1>Feedback XKE</h1>
         <transition name="fade">
-          <ul v-if="loaded && talks.length>0">
-            <li class="talk" v-for="talk in talks">
-              <h3>{{talk.title}}</h3>
-              <form v-on:submit="updateTalk(talk)">
+          <form
+            v-if="loaded && talks.length>0"
+            v-on:submit.prevent="updateTalks(talks)"
+          >
+            <ul>
+              <li class="talk" v-for="talk in talks">
+                <h3>{{talk.title}}</h3>
                 <div class="form-section">
                   <h5>Note :</h5>
-                  <label>
-                    <input v-model="talk.rate" v-bind:value="1" type="radio"/> 1
-                  </label>
-                    
-                  <label>
-                    <input v-model="talk.rate" v-bind:value="2" type="radio"/> 2
-                  </label>
-
-                  <label>
-                    <input v-model="talk.rate" v-bind:value="3" type="radio"/> 3
-                  </label>
-
-                  <label>
-                    <input v-model="talk.rate" v-bind:value="4" type="radio"/> 4
-                  </label>
-
-                  <label>
-                    <input v-model="talk.rate" v-bind:value="5" type="radio"/> 5
+                  <label v-for="rate in [1, 2, 3, 4, 5]">
+                    <input v-model="talk.rate" v-bind:value="rate" type="radio"/> {{rate}}
                   </label>
                 </div>
 
                 <div class="form-section">
                   <textarea v-model="talk.comment" placeholder="Un commentaire ?"></textarea>
                 </div>
+              </li>
+            </ul>
 
-                <div v-if="talk.notice" class="form-section notice">
-                  {{talk.notice}}
-                </div>
-
-                <div class="form-section">
-                  <button type="submit" :disabled="talk.rate === undefined">Valider</button>
-                </div>
-              </form>
-            </li>
-          </ul>
+            <div class="form-section">
+              <button type="submit">Valider</button>
+            </div>
+          </form>
           <p class="not-available" v-if="loaded && talks.length === 0">No feedback available yet.</p>
         </transition>
         <transition name="fade">
@@ -75,26 +58,54 @@
       };
     },
     methods: {
-      updateTalk(talk) {
-        const rate = parseInt(talk.rate, 10);
-        if (rate >= 1 && rate <= 5) {
+      updateTalks(talks) {
+        const talksToUpdate = talks.map((talk) => {
+          const talkToUpdate = {
+            id: talk.id,
+            conferenceId: talk.conferenceId,
+          };
+
+          const rate = parseInt(talk.rate, 10);
+          if (rate >= 1 && rate <= 5) {
+            talkToUpdate.rate = rate;
+          }
+
+          const comment = (talk.comment || '').trim();
+          if (comment.length > 0) {
+            talkToUpdate.comment = comment;
+          }
+
+          return talkToUpdate;
+        }).filter(talk => ('comment' in talk) || ('rate' in talk));
+
+        if (talksToUpdate.length > 0) {
           this.loaded = false;
           const uid = Firebase.auth().currentUser.uid;
-          Firebase.database()
-            .ref(`rating/${talk.conferenceId}/${talk.id}/${uid}`)
-            .set({
-              comment: talk.comment,
-              mark: rate,
-            }).then(() => {
-              this.loaded = true;
-              // eslint-disable-next-line no-param-reassign
-              talk.notice = 'Votre vote a été pris en compte. Merci 🎉';
 
-              setTimeout(() => {
-                // eslint-disable-next-line no-param-reassign
-                talk.notice = undefined;
-              }, 5000);
-            });
+          Promise.all(
+            talksToUpdate.map((talk) => {
+              const object = {};
+              if ('comment' in talk) {
+                object.comment = talk.comment;
+              }
+
+              if ('rate' in talk) {
+                object.mark = talk.rate;
+              }
+
+              return Firebase.database()
+                .ref(`rating/${talk.conferenceId}/${talk.id}/${uid}`)
+                .set(object);
+            }),
+          ).then(() => {
+            this.loaded = true;
+            this.$router.push('/rating');
+          }).catch((err) => {
+            // eslint-disable-next-line no-alert
+            alert('Une erreur est survenue pendant la soumission du formulaire.');
+            // eslint-disable-next-line no-console
+            console.log(err);
+          });
         }
       },
     },
@@ -102,20 +113,28 @@
       conferences: {
         source: Firebase.database().ref('rating/'),
         readyCallback(conferences) {
+          const uid = Firebase.auth().currentUser.uid;
           const dBConferences = conferences.val();
           if (Object.keys(dBConferences).length > 0) {
             let conferenceId = this.id;
             if (!conferenceId) {
               conferenceId = Object.keys(dBConferences)[Object.keys(dBConferences).length - 1];
             }
+
+            const conference = dBConferences[conferenceId];
+
             this.$http.get(`static/${conferenceId}.json`)
               .then((res) => {
-                this.talks = res.body.map(talk => ({
-                  ...talk,
-                  comment: '',
-                  rate: undefined,
-                  notice: undefined,
-                }));
+                this.talks = res.body.map((talk) => {
+                  const talkFromDB = conference[talk.id] || {};
+                  const feedback = talkFromDB[uid] || {};
+
+                  return {
+                    ...talk,
+                    comment: feedback.comment || '',
+                    rate: feedback.mark || undefined,
+                  };
+                });
                 this.loaded = true;
               })
               .catch(() => {
@@ -143,10 +162,6 @@
     min-height: 100px;
     max-width: 80%;
     min-width: 80%;
-  }
-
-  .notice{
-    color:#009933;
   }
 
   .rating {
