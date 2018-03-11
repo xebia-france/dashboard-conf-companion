@@ -4,12 +4,10 @@
     <section id="body">
       <div class="separator"></div>
       <div class="rating">
-        <h1>Feedback XKE</h1>
+        <h1>Rate your XKE</h1>
+        <h2>{{id}}</h2>
         <transition name="fade">
-          <form
-            v-if="loaded && talks.length>0"
-            v-on:submit.prevent="updateTalks(talks)"
-          >
+          <form v-if="loaded && talks.length>0" v-on:submit.prevent="updateTalks(talks)">
             <ul>
               <li class="talk" v-for="talk in talks">
                 <h3>{{talk.title}}</h3>
@@ -21,16 +19,17 @@
                 </div>
 
                 <div class="form-section">
-                  <textarea v-model="talk.comment" placeholder="Un commentaire ?"></textarea>
+                  <textarea v-model="talk.comment"
+                            placeholder="Please, leave a comment for speaker, thank you!"></textarea>
                 </div>
               </li>
             </ul>
 
             <div class="form-section">
-              <button type="submit">Valider</button>
+              <button type="submit">Submit</button>
             </div>
           </form>
-          <p class="not-available" v-if="loaded && talks.length === 0">No feedback available yet.</p>
+          <p class="not-available" v-if="loaded && talks.length===0">Cannot rate event yet.</p>
         </transition>
         <transition name="fade">
           <div v-if="!loaded" class="sk-folding-cube">
@@ -94,55 +93,46 @@
               }
 
               return Firebase.database()
-                .ref(`rating/${talk.conferenceId}/${talk.id}/${uid}`)
+                .ref(`rating/${this.id}/${talk.id}/${uid}`)
                 .set(object);
             }),
           ).then(() => {
             this.loaded = true;
-            this.$router.push('/rating');
+            this.$router.push(`/rating/${this.id}`);
           }).catch((err) => {
             // eslint-disable-next-line no-alert
-            alert('Une erreur est survenue pendant la soumission du formulaire.');
-            // eslint-disable-next-line no-console
-            console.log(err);
+            alert('Arg, an error occurred, please contact Support');
           });
         }
       },
     },
-    firebase: {
-      conferences: {
-        source: Firebase.database().ref('rating/'),
-        readyCallback(conferences) {
-          const uid = Firebase.auth().currentUser.uid;
-          const dBConferences = conferences.val();
-          if (Object.keys(dBConferences).length > 0) {
-            let conferenceId = this.id;
-            if (!conferenceId) {
-              conferenceId = Object.keys(dBConferences)[Object.keys(dBConferences).length - 1];
-            }
-
-            const conference = dBConferences[conferenceId];
-
-            this.$http.get(`static/${conferenceId}.json`)
-              .then((res) => {
-                this.talks = res.body.map((talk) => {
-                  const talkFromDB = conference[talk.id] || {};
-                  const feedback = talkFromDB[uid] || {};
-
-                  return {
-                    ...talk,
-                    comment: feedback.comment || '',
-                    rate: feedback.mark || undefined,
-                  };
+    firebase() {
+      return {
+        conference: {
+          source: Firebase.database().ref(`rating/${this.id}`),
+          readyCallback(conference) {
+            const uid = Firebase.auth().currentUser.uid;
+            if (this.id) {
+              this.$http.get(`static/${this.id}.json`)
+                .then((res) => {
+                  this.talks = res.body.map((talk) => {
+                    const talkFromDB = conference.val()[talk.id] || {};
+                    const feedback = talkFromDB[uid] || {};
+                    return {
+                      ...talk,
+                      comment: feedback.comment || '',
+                      rate: feedback.mark || undefined,
+                    };
+                  });
+                  this.loaded = true;
+                })
+                .catch(() => {
+                  this.loaded = true;
                 });
-                this.loaded = true;
-              })
-              .catch(() => {
-                this.loaded = true;
-              });
-          }
+            }
+          },
         },
-      },
+      };
     },
   };
 </script>
@@ -158,7 +148,7 @@
     margin-bottom: 12px;
   }
 
-  textarea{
+  textarea {
     min-height: 100px;
     max-width: 80%;
     min-width: 80%;
@@ -182,7 +172,7 @@
     opacity: 0;
   }
 
-  .form-section+.form-section {
+  .form-section + .form-section {
     margin-top: 12px;
   }
 
