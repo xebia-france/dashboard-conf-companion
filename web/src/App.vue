@@ -39,4 +39,13 @@
     margin: 0;
     padding: 0;
   }
+
+  button {
+    background-color: #2c374c;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
 </style>

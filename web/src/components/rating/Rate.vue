@@ -5,27 +5,22 @@
       <div class="separator"></div>
       <div class="rating">
         <h1>Rate your XKE</h1>
-        <h2>{{id}}</h2>
+        <p>{{id}}</p>
         <transition name="fade">
           <form v-if="loaded && talks.length>0" v-on:submit.prevent="updateTalks(talks)">
             <ul>
               <li class="talk" v-for="talk in talks">
                 <h3>{{talk.title}}</h3>
-                <div class="form-section">
-                  <h5>Note :</h5>
-                  <label v-for="rate in [1, 2, 3, 4, 5]">
-                    <input v-model="talk.rate" v-bind:value="rate" type="radio"/> {{rate}}
-                  </label>
-                </div>
-
-                <div class="form-section">
-                  <textarea v-model="talk.comment"
-                            placeholder="Please, leave a comment for speaker, thank you!"></textarea>
-                </div>
+                Mark:
+                <label v-for="rate in [1, 2, 3, 4, 5]">
+                  <input v-model="talk.rate" v-bind:value="rate" type="radio"/> {{rate}}
+                </label>
+                <textarea v-model="talk.comment"
+                          placeholder="Please, leave a comment for speaker, thank you!"></textarea>
               </li>
             </ul>
 
-            <div class="form-section">
+            <div class="form-submit">
               <button type="submit">Submit</button>
             </div>
           </form>
@@ -144,14 +139,17 @@
     margin-top: 20px;
   }
 
-  h3 {
-    margin-bottom: 12px;
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border-color: #c1c1c1;
   }
 
-  textarea {
-    min-height: 100px;
-    max-width: 80%;
-    min-width: 80%;
+  form {
+    margin: 20px;
+    text-align: left;
   }
 
   .rating {
@@ -168,12 +166,13 @@
     transition: opacity .5s;
   }
 
-  .fade-enter, .fade-leave-to {
-    opacity: 0;
-  }
-
-  .form-section + .form-section {
-    margin-top: 12px;
+  .form-submit {
+    &:hover {
+      opacity: 1;
+    }
+    opacity: .8;
+    text-align: center;
+    margin-top: 30px;
   }
 
   header {
