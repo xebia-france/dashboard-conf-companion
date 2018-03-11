@@ -94,7 +94,7 @@
           ).then(() => {
             this.loaded = true;
             this.$router.push(`/rating/${this.id}`);
-          }).catch((err) => {
+          }).catch(() => {
             // eslint-disable-next-line no-alert
             alert('Arg, an error occurred, please contact Support');
           });
