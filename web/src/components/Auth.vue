@@ -14,7 +14,7 @@
     name: 'auth',
     mounted() {
       const uiConfig = {
-        signInSuccessUrl: '/',
+        signInSuccessUrl: `/#${this.$route.query.n}`,
         signInOptions: [
           Firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         ],

@@ -16,6 +16,11 @@ new Vue({
   router,
   template: '<App/>',
   components: {App},
+  methods: {
+    goToSignIn() {
+      this.$router.push(`/auth?n=${this.$route.path}`);
+    },
+  },
   beforeCreate() {
     Firebase.auth().onAuthStateChanged((user) => {
       if (user && user.email.endsWith('xebia.fr')) {
@@ -23,11 +28,11 @@ new Vue({
       } else if (user) {
         user.delete().then(() => {
           Firebase.auth().signOut().then(() => {
-            this.$router.push('/auth');
+            this.goToSignIn();
           });
         });
       } else {
-        this.$router.push('/auth');
+        this.goToSignIn();
       }
     });
   },
