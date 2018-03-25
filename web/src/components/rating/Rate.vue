@@ -11,10 +11,19 @@
             <ul>
               <li class="talk" v-for="talk in talks">
                 <h3>{{talk.title}}</h3>
-                Mark:
-                <label v-for="rate in [1, 2, 3, 4, 5]">
-                  <input v-model="talk.rate" v-bind:value="rate" type="radio"/> {{rate}}
-                </label>
+                <div class="talk-mark-line">
+                  <div>
+                    Mark:
+                    <label v-for="rate in [1, 2, 3, 4, 5]">
+                      <input v-model="talk.rate" v-bind:value="rate" type="radio"/> {{rate}}
+                    </label>
+                  </div>
+                  <button
+                    type="button"
+                    class="talk-reset-button"
+                    v-on:click="resetTalk(talk)"
+                  >Reset mark & comment</button>
+                </div>
                 <textarea v-model="talk.comment"
                           placeholder="Please, leave a comment for speaker, thank you!"></textarea>
               </li>
@@ -100,6 +109,13 @@
           });
         }
       },
+      resetTalk(talkToReset) {
+        this.talks = this.talks.map(talk => (talk.id !== talkToReset.id ? talk : {
+          ...talk,
+          rate: undefined,
+          comment: '',
+        }));
+      },
     },
     firebase() {
       return {
@@ -150,6 +166,21 @@
   form {
     margin: 20px;
     text-align: left;
+  }
+
+  .talk-mark-line {
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+    align-items: center;
+  }
+
+  .talk-reset-button {
+    opacity: 0.8;
+    &:hover, &:focus{
+      cursor: pointer;
+      opacity: 1;
+    }
   }
 
   .rating {
