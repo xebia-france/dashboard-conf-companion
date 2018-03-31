@@ -11,12 +11,23 @@
             <ul>
               <li class="talk" v-for="talk in talks">
                 <h3>{{talk.title}}</h3>
-                Mark:
-                <label v-for="rate in [1, 2, 3, 4, 5]">
-                  <input v-model="talk.rate" v-bind:value="rate" type="radio"/> {{rate}}
-                </label>
-                <textarea v-model="talk.comment"
-                          placeholder="Please, leave a comment for speaker, thank you!"></textarea>
+                <div class="talk-mark-line">
+                  <div>
+                    Mark:
+                    <label v-for="rate in [1, 2, 3, 4, 5]">
+                      <input v-model="talk.rate" v-bind:value="rate" type="radio"/> {{rate}}
+                    </label>
+                  </div>
+                  <button
+                    type="button"
+                    class="talk-reset-button"
+                    v-on:click="resetTalk(talk)"
+                  >Reset mark & comment</button>
+                  <textarea
+                    v-model="talk.comment"
+                    placeholder="Please, leave a comment for speaker, thank you!"
+                  ></textarea>
+                </div>
               </li>
             </ul>
 
@@ -100,6 +111,13 @@
           });
         }
       },
+      resetTalk(talkToReset) {
+        this.talks = this.talks.map(talk => (talk.id !== talkToReset.id ? talk : {
+          ...talk,
+          rate: undefined,
+          comment: '',
+        }));
+      },
     },
     firebase() {
       return {
@@ -150,6 +168,32 @@
   form {
     margin: 20px;
     text-align: left;
+  }
+
+  .talk-mark-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+
+      .talk-reset-button {
+        margin-top: 0.3em;
+        margin-bottom: 0.6em;
+        order: 2;
+      }
+    }
+  }
+
+  .talk-reset-button {
+    opacity: 0.8;
+    &:hover, &:focus{
+      cursor: pointer;
+      opacity: 1;
+    }
   }
 
   .rating {
