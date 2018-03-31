@@ -183,7 +183,7 @@
       .talk-reset-button {
         margin-top: 0.3em;
         margin-bottom: 0.6em;
-        order: 3;
+        order: 2;
       }
     }
   }
