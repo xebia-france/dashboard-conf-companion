@@ -173,6 +173,17 @@
     justify-content: space-between;
     height: 2em;
     align-items: center;
+    flex-direction: row;
+
+    @media screen and (max-width: 500px) {
+      height: auto;
+      flex-direction: column-reverse;
+
+      .talk-reset-button {
+        margin-top: 0.3em;
+        margin-bottom: 0.6em;
+      }
+    }
   }
 
   .talk-reset-button {
