@@ -23,9 +23,11 @@
                     class="talk-reset-button"
                     v-on:click="resetTalk(talk)"
                   >Reset mark & comment</button>
+                  <textarea
+                    v-model="talk.comment"
+                    placeholder="Please, leave a comment for speaker, thank you!"
+                  ></textarea>
                 </div>
-                <textarea v-model="talk.comment"
-                          placeholder="Please, leave a comment for speaker, thank you!"></textarea>
               </li>
             </ul>
 
@@ -171,8 +173,19 @@
   .talk-mark-line {
     display: flex;
     justify-content: space-between;
-    height: 2em;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+
+      .talk-reset-button {
+        margin-top: 0.3em;
+        margin-bottom: 0.6em;
+        order: 3;
+      }
+    }
   }
 
   .talk-reset-button {
