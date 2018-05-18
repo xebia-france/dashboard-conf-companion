@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "conf-companion"
+    "xke": "conf-companion",
+    "dataxday": "dataxday-cc"
   }
 }
