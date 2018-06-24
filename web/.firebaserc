@@ -1,6 +1,7 @@
 {
   "projects": {
     "xke": "conf-companion",
-    "dataxday": "dataxday-cc"
+    "dataxday": "dataxday-cc",
+    "pcd": "pcd-cc"
   }
 }
