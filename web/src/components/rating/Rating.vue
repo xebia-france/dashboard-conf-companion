@@ -4,7 +4,7 @@
     <section id="body">
       <div class="separator"></div>
       <div class="rating">
-        <h1>Feedback XKE</h1>
+        <h1>Feedback {{confName}}</h1>
         <p>{{participantCount}} participant(s)</p>
         <p>{{ratingCount}} answer(s)</p>
         <transition name="fade">
@@ -43,7 +43,21 @@
       talks: [],
       schedule: [],
       loaded: false,
+      confName: '',
     }),
+    created() {
+      switch (process.env.FIREBASE_CONFIGURATION.projectId) {
+        case 'pcd-cc':
+          this.confName = 'Paris Container Day';
+          break;
+        case 'dataxday-cc':
+          this.confName = 'Data X Day';
+          break;
+        default:
+          this.confName = 'XKE';
+          break;
+      }
+    },
     methods: {
       setRatingCount() {
         _.each(this.talks, (t) => {

@@ -1,0 +1,382 @@
+[{
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 08:30",
+	"id": "cc-7a7imeemfj0ke3asurp24is749",
+	"kind": "keynote",
+	"speakers": [],
+	"title": "Accueil + Petit Déjeuner",
+	"toTime": "2018-06-26 09:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 09:00",
+	"id": "cc-3i1nnnlrtf4pbpf55bs0se4o1s",
+	"kind": "keynote",
+	"speakers": [],
+	"title": "🇫🇷 Mot d'accueil + Keynote surprise ",
+	"toTime": "2018-06-26 09:30",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 09:30",
+	"id": "cc-7n7geh1jg83j4t0uoqthlvh5eu",
+	"kind": "keynote",
+	"speakers": [{
+		"id": "lricec08cc2ebe5c746ebac229e92d49edfbf",
+		"name": "Liz  Rice"
+	}],
+	"summary": "\n**Pitch**\nWhen we run an application under orchestration, we no longer control which machine a piece of code will run on. Does this constitute a security weakness? How do we cope when security patches need to be applied in response to vulnerabilities? In this talk we will see how automation and DevOps processes can help us address these concerns, and we will explore the properties of containerised microservices that help us keep our software safer when our deployments come under attack.",
+	"title": "🇬🇧Orchestration - security threat or opportunity? - Keynote",
+	"toTime": "2018-06-26 10:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 10:00",
+	"id": "cc-7bg3scgrklt40i9fr8q82pmtrn",
+	"kind": "keynote",
+	"speakers": [{
+		"id": "ccho06887279d4164d278b90647090721cad",
+		"name": "Christopher  Cho"
+	}, {
+		"id": "daronchick79c5f535f2914bb0a4631fe571573d09",
+		"name": "David  Aronchick"
+	}],
+	"summary": "\n**Pitch**\n\nKubernetes has enabled an entire new generation of applications - deployed using easy to read, declarative language and distributed across many machines and clouds. Machine learning’s need for large scale, portable workloads has been one of the primary beneficiaries.\n\nIn this talk, we will cover the Kubeflow project, a cross-industry effort to make machine learning on Kubernetes simple, portable and composable and unlock an entire industry of data scientists and developers to engage with this new field.",
+	"title": "🇬🇧Cloud Native ML with Kubeflow - Keynote ",
+	"toTime": "2018-06-26 10:30",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 10:30",
+	"id": "cc-28gq618l9uvbkmp558ciu24fee",
+	"kind": "keynote",
+	"speakers": [],
+	"title": "Pause",
+	"toTime": "2018-06-26 11:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 12:40",
+	"id": "cc-3t6lfphh7qr5dlr5qnlh6p0sd4",
+	"kind": "keynote",
+	"speakers": [],
+	"title": "Déjeuner",
+	"toTime": "2018-06-26 14:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 15:40",
+	"id": "cc-1rb0edolvde3j4p401anugvqsv",
+	"kind": "keynote",
+	"speakers": [],
+	"title": "Pause",
+	"toTime": "2018-06-26 16:10",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 18:00",
+	"id": "cc-4qlvp63boncftkmml9hnq3s7o0",
+	"kind": "keynote",
+	"speakers": [],
+	"title": "Cocktail de Clôture",
+	"toTime": "2018-06-26 19:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 11:00",
+	"id": "cc-1jckaeut7rgt44ijq72linp2vd",
+	"room": "Salle 1",
+	"speakers": [{
+		"id": "aseure901d2e09e18c497c92c4262e4840d59e",
+		"name": "Anthony  Seure"
+	}],
+	"summary": "**Pitch**\n\nKubernetes as become a go-to solution for container-based infrastructure. However this technology is quite new for today companies, and managing this new kind of infrastructure comes with its own challenges.\n\nAt Algolia, we have been using Kubernetes for the last two years to collect, store and process the logs of our search engine infrastructure which is spread across thousands of servers in 16 regions. Kubernetes has and is still scaling with us (volumetry is doubling every year) to process more than 1B+ line of logs everyday and produce near-real time metrics and analytics data to our customers.\n\nIn this talk, we will present our hybrid infrastructure (bare-metal for the search engine and cloud-based for our backend systems), explain why we made this choice and why it is still relevant to us today to run on managed Kubernetes clusters with Google Kubernetes Engine (GKE).\n\n\n\n\n**Niveau**\n\nDébutant",
+	"title": "🇫🇷 Kubernetes: Should you use it for your next project? ",
+	"toTime": "2018-06-26 11:45",
+	"type": "REX"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 11:50",
+	"id": "cc-3ef4ouq9ddr6b5p2cjk8t6g1bc",
+	"room": "Salle 1",
+	"speakers": [{
+		"id": "achotardhorgix7ee3a8f4cc49421eb05c2e2dc5593306",
+		"name": "Alexis Chotard (Horgix)"
+	}],
+	"summary": "**Pitch**\n\nSome weeks ago, I was at the KubeCon + CloudNativeCon EU. 3 main topics that\nare not as well-known as they should be were mentioned a lot:\n\n- Service Mesh\n- Serverless/FaaS\n- Modern observability / Tracing\n\nFor most people, these topics are really fuzzy since they are somewhat recent.\nIt's easy to wonder what Service Mesh offers compared to traditional Load Balancing, what technology you should pick among Linkerd, Conduit, Envoy, Istio, when they all seem to do the same things. For Serverless and FaaS, one could wonder what they bring to the table when we already have orchestrators and containers that we can deploy in one command. And finally, it's easy to get lost among all the monitoring paradigms: metrics, logs, tracing... why everyone and every product is onboarding some tracing capabilities recently?\n\nWe'll talk about all of this during these 20min. It may seem a lot, but we'll go straight to the point as \"what's the need it's looking to address and why should I care\"\n\n\n**Niveau**\n\nDébutant",
+	"title": "🇫🇷Buzzwords at the Cloud Native era ",
+	"toTime": "2018-06-26 12:10",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 12:15",
+	"id": "cc-5ruu40603tb58auohk44hpd172",
+	"room": "Salle 1",
+	"speakers": [{
+		"id": "idvoretskyi41a9b30369304714b38a1e91b5ec6a26",
+		"name": "Ihor Dvoretskyi"
+	}],
+	"summary": "**Pitch**\n\nThe Cloud Native technologies are changing the technology world today. Open Source projects like Kubernetes, Prometheus, gRPC, Helm and others are the leading choices for building the modern, scalable, reliable and performant microservices-based environments.\n\nIn this talk, Ihor Dvoretskyi, Developer Advocate at the Cloud Native Computing Foundation (CNCF) will provide an overview of the projects, hosted by CNCF, and their role in the Cloud Native world.\n\n\n**Niveau**\n\nDébutant",
+	"title": " 🇬🇧 The Cloud Native Way",
+	"toTime": "2018-06-26 12:35",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 14:00",
+	"id": "cc-64so9vi71pq8dm8e1bspktglh5",
+	"room": "Salle 1",
+	"speakers": [{
+		"id": "dmaher35617bb9f0f24d74b1a28f31a60a7fea",
+		"name": "Daniel Maher"
+	}],
+	"summary": "**Pitch**\n\nAt Datadog we help thousands of organisations monitor their infrastructure and applications. In this session, we’ll dive deeper into the several hundred trillion data points we’ve gathered to extract information about the real-world use of containers and explore trends in container use. Furthermore, we’ll discuss the top applications being used in containers and, using the data, provide insight into which metrics you should watch and how to troubleshoot based on those metrics. Finally, we’ll look at a framework for your metrics and how to use it to find solutions to problems that will inevitably occur.\n\n\nWe will cover the three types of monitoring data; what to collect; what should trigger an alert (avoiding an alert storm and pager fatigue); and how to follow the resources to find the root causes of problems. Although the real-world container use data is derived from Datadog users, the focus of this session is not tool specific, so attendees will leave with strategies and frameworks they can implement in their container-based environments today regardless of the platforms and tools they use.\n\n\n**Niveau**\n\nDébutant",
+	"title": "🇫🇷 Monitoring Containers: Follow the Data",
+	"toTime": "2018-06-26 14:45",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 14:50",
+	"id": "cc-14bn0mrmfrv1fjui0n6sbofbse",
+	"room": "Salle 1",
+	"speakers": [{
+		"id": "sliardb547dfe9820841d39ebdd82f308993b9",
+		"name": "Samuel  Liard"
+	}],
+	"summary": "**Pitch**\n\nAprès avoir passé plusieurs années à monter notre plateforme SAAS, nous avons de plus en plus de clients qui demandent des installations de notre service dans leur réseau. Comment après avoir passé des mois à faire évoluer notre infrastructure, la réinstaller en 10 minutes chez un client ? Comment mettre à jour ces serveurs à distance aussi simplement que possible ?\n\nRancher est un orchestrateur de machine docker qui vous permet en plus de gérer votre propre catalogue de services. Cette présentation est l’occasion de vous faire partager notre expérience avec rancher, les points forts, les problèmes que l’on a rencontrés et comment nous les avons résolus.\n\n\n**Niveau**\n\nDébutant",
+	"title": " 🇫🇷 Ajouter une offre On-premises à votre SAAS avec Rancher UI ",
+	"toTime": "2018-06-26 15:35",
+	"type": "REX"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 16:10",
+	"id": "cc-7dsbo5rplguev0f98da38sddl3",
+	"room": "Salle 1",
+	"speakers": [{
+		"id": "adiaz7787de08333a4704b9d8995bd8c545a9",
+		"name": "Alex Diaz"
+	}],
+	"summary": "**Pitch**\n\nThere is a lot of discussion nowadays on how to use containers in production, are you there already? When operating a production platform we should prepare for failure and in addition to monitoring working metrics, we cannot forget about the most common failure points. From monitoring solution agnostic perspective, and following a use-case driven approach, we will learn the most common failure points in a Kubernetes infrastructure and how to detect them (metrics, events, checks, etc).\n\n\n**Niveau**\n\nDébutant",
+	"title": "🇬🇧15 Kubernetes failure points you should watch",
+	"toTime": "2018-06-26 16:55",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 17:00",
+	"id": "cc-3liq0i8p82a9dnf8loekb9nc3a",
+	"room": "Salle 1",
+	"speakers": [{
+		"id": "rharvey1c4e4555f2384db2a53aa34a125e8522",
+		"name": "Ric  Harvey"
+	}],
+	"summary": "**Pitch**\n\nUsing Docker, AWS Fargate and CodePipeline, I’ll demonstrate how to go from proof of concept on a laptop to production in 45mins. Not only this but all attendees will be given the URL to the code and examples on GitHub so they can take away what they’ve learned and do it in practice in their own time. Best of all this will be a no slides session and all live coding on stage, time to pray to the demo god’s!\n\n**Niveau**\n\nDébutant",
+	"title": "🇬🇧 Practical AWS Fargate",
+	"toTime": "2018-06-26 17:45",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 11:00",
+	"id": "cc-4aba4apqb78skdhn1edfjfm8ga",
+	"room": "Salle 2",
+	"speakers": [{
+		"id": "lvielle6eaa0f9f809044398f6593bb86ec3521",
+		"name": "Ludovic  Vielle"
+	}, {
+		"id": "tauffredou63534b8bb11546ce8e61fbd3b8be6b2d",
+		"name": "Thomas  Auffredou"
+	}],
+	"summary": "**Pitch**\n\nJobTeaser facilite et réinvente l’insertion professionnel des jeunes talents en mettant en relation les étudiants, les écoles et les entreprises au sein de sa plateforme web.\n\nC’est l’histoire de la migration d’une plateforme vers Kubernetes.\n\nCette histoire commence par les raisons qui nous ont conduites à engager cette migration. Rien n’est jamais aussi simple que prévu, aussi nous reviendrons sur les intentions initiales.\n\nLes conteneurs changent la manière de développer et de déployer nos applications. Nous vous partagerons ces détails, parfois souhaités, parfois subis qui font toute la différence, qu’il s’agisse de build, de déploiement, de sécurité ou d'exploitation.\n\n**Niveau**\n\nIntermédiaire",
+	"title": "🇫🇷 JobTeaser, destination Kubernetes ",
+	"toTime": "2018-06-26 11:45",
+	"type": "REX"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 11:50",
+	"id": "cc-7mc6uns3p1cdpp6ojipeu9c55p",
+	"room": "Salle 2",
+	"speakers": [{
+		"id": "dgarniermoirouxba65492bc8a6444bbc5e577840be5b47",
+		"name": "Daniel  Garnier-Moiroux"
+	}],
+	"summary": "**Pitch**\n\nThe Concourse website states “Concourse is an open-source continuous thing-doer.” (https://concourse-ci.org). It is a great tool to implement continuous integration and continuous delivery pipelines, that are both fast and reliable. It is built for the cloud, using cloud-native principles and tools, by the folks who work on Cloud Foundry (CF) at Pivotal. They leveraged the knowledge of containers they gained while building CF, and the custom CF container backend called Garden - which is runC-compatible.\n\nIn this talk, you’ll first learn the details of how Concourse works, the underlying principles and the architecture. We’ll then dive into a live demo: we’ll build a pipeline for a typical web-app from scratch, iteratively, showcasing the different principles and tools\n\n\n**Niveau**\n\nIntermédiare",
+	"title": " 🇫🇷 Concourse: container-first continuous integration & delivery ",
+	"toTime": "2018-06-26 12:35",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 14:00",
+	"id": "cc-6v3jeokf2nh8jdmt6nmig59vdb",
+	"room": "Salle 2",
+	"speakers": [{
+		"id": "slegallecdffc4196a14ecab3bd12799b4e0007",
+		"name": "Sébastien Le Gall"
+	}, {
+		"id": "slavallef1a9fd79e7e94516b35a04d2d67c1982",
+		"name": "Sébastien  Lavallée"
+	}],
+	"summary": "**Pitch**\n\n3 years ago, Meetic chose to rebuild it’s backend architecture using microservices and an event driven strategy. As we where moving along our old legacy application, testing features became gradually a pain, especially when those features rely on multiple changes across multiple components. Whatever the number of application you manage, unit testing is easy. The real challenge is set in end-to-end testing, even more when a feature can involve up to 60 different components.\n\nTo solve that issue, Meetic is building a Kubernetes strategy around testing. To do such a thing we need to :\n\n- Be able to generate a docker container for each pull-request on any component of the stack\n- Be able to create a full testing environment in the simplest way\n- Be able to launch automated test on this newly created environment\n- Optimize containers and Kubernetes configuration to handle dozen of namespaces running simultaneously\n- Have a clean-up process to destroy testing environment after tests\n\nTo separate the various testing environment, we chose to use Kubernetes Namespaces each containing a variant of the Meetic stack.\n\nBut when it comes to Kubernetes, managing multiple namespaces can be hard. Yaml configuration files need to be shared in a way that each people / automated job can access to them and modify them without impacting others. This is typically why Meetic chose to develop it’s own tool to manage namespace through a cli tool, and a REST API on which we can plug a friendly UI.\n\nManaging over 50 namespaces each running up to 60 containers create issues on memory and CPU usage. This is where container and Kubernetes configuration optimizations takes on its full meaning.\n\nIn this talk we will tell you the story of our CI/CD evolution to satisfy the need to create a docker container for each new pull request and optimizing them. Then we will approach optimizations on Kubernetes side and namespace management.\n\n\n**Niveau**\n\nIntermédiaire",
+	"title": "🇫🇷 Building an end-to-end testing strategy on top of Kubernetes in a world of microservices ",
+	"toTime": "2018-06-26 14:45",
+	"type": "REX"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 14:50",
+	"id": "cc-15ua5mttun6ldo30adq4r9ko5v",
+	"room": "Salle 2",
+	"speakers": [{
+		"id": "dgageot656a1f60b4c6449291056224f91fd2b6",
+		"name": "David  Gageot"
+	}],
+	"summary": "\n**Pitch**\n\nKubernetes est devenu l’orchestrateur de choix pour déployer des applications. Mais qu’en est-il du quotidien des développeurs qui créent ces applications ? Plus on s’appuie sur la plateforme, plus il est compliqué de développer en dehors de la plateforme. Et développer à l’intérieur de conteneurs n’est pas réputé facile ni agréable.\n\nGoogle est à l’origine de plusieurs projets Open-Source qui se focalisent sur l’expérience des développeurs dans un monde de conteneurs. Kaniko permet de construire une image Docker à partir d’un Dockerfile, dans un cluster Kubernetes, de manière sécurisée. Skaffold facilite le déploiement continu d’applications pour Kubernetes. Les images Distroless offrent des images de base légères, sécurisées et de qualité. Bazel permet meme de construire des images Docker sans Docker.\n\nVenez découvrir comment ces outils se combinent pour offrir un environment de développement agréable et performant dans le monde des conteneurs.\n\n**Niveau**\n\nIntermédiaire",
+	"title": "🇫🇷 Google Container Tools : développer efficacement dans un monde de conteneurs",
+	"toTime": "2018-06-26 15:10",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 15:15",
+	"id": "cc-2jf1hin9qj0lj3n2sfubvg115j",
+	"room": "Salle 2",
+	"speakers": [{
+		"id": "achernyshevfb0ca0a56938420caaabaab71fd5459a",
+		"name": "Andrei  Chernyshev"
+	}],
+	"summary": "**Pitch**\n\nOutfittery’s mission is to provide relevant fashion to men. In the past we relied purely on our stylists to put together the best outfits for our customers. Right now we are in the process of adding more and more intelligent algorithms to augment our human experts.\n\n\nTo support that we’ve built complex decision making platform. But there are bunch of additional piece of functionality around that powerful platform that we don’t want to build-in. For example, intermediate data transformation or Slack notification upon certain events, etc. After a research and evaluation we choose Kubeless with Serverless framework on top of it.\n\nPersonally for me that was a moment to start with Go programming. One core functionality was missing - secret support. Making scheduled triggers working wasn’t easy to get done as well. But by now we have a setup that makes our life easier.\n\n\n**Niveau**\n\nIntermédiaire",
+	"title": "🇬🇧 Serverless with Kubeless - usecase in Outfittery",
+	"toTime": "2018-06-26 15:35",
+	"type": "REX"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 16:10",
+	"id": "cc-799s5o58j957houfoh3i0j487h",
+	"room": "Salle 2",
+	"speakers": [{
+		"id": "amorelle3800ed80405140e895e2f4f246284240",
+		"name": "Alexis Morelle"
+	}, {
+		"id": "bcadiot7b0a5f05f86f4759a8f9475ad5aae706",
+		"name": "Bastien Cadiot"
+	}, {
+		"id": "steyssiercddbb61d2dbc478bbf01233fe3e85905",
+		"name": "Stéphane Teyssier"
+	}],
+	"summary": "\n**Pitch**\nLe marché des orchestrateurs de conteneurs a fortement évolué sur l’année qui vient de s’écouler. Nous verrons que les changements de stratégies des éditeurs ont mené à un panel réduit de solutions et nous avons choisi de nous focaliser sur Kubernetes et Nomad.\nMalgré tout, difficile de choisir entre ces deux orchestrateurs.\n\nNous ramenons le débat dans du concret en vous proposant d’incarner l’une des deux équipes les plus hype du moment : “Team cloud agilité devops” et “Cloud container serverless”. Chaque équipe a fait son choix d’orchestrateur et est venu pour le défendre.\n\nCet affrontement sera l’occasion de voir ce qui différencie Nomad et Kubernetes sur les thématiques suivantes :\n\n- déploiement : socle et services\n- scaling\n- sécurité: gestion des autorisations et utilisateurs\n- overlay réseau\n- monitoring\n\n**Niveau**\n\nIntermédiaire",
+	"title": "🇫🇷 Shoot-em up interactif des orchestrateurs ",
+	"toTime": "2018-06-26 16:55",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 17:00",
+	"id": "cc-73ira15u6b42vefnb5kvmv7tha",
+	"room": "Salle 2",
+	"speakers": [{
+		"id": "lgrangeau014e68dc70de4ffb81ebfd1a5a5928d8",
+		"name": "Laurent  Grangeau"
+	}],
+	"summary": "**Pitch**\n\nDocker existe depuis près de 5 ans maintenant, et il contribue largement à démocratiser les microservices, et la livraison continue, en permettant de livrer des logiciels en production à un rythme plus soutenu et plus souvent. Mais comment s’occuper de l’infrastructure immuable, de la mise à niveau du déploiement, du déploiement blue/green, du déploiement manuel, de la surveillance ou même du chaos testing ? Dans cette session, nous jetterons un oeil à Spinnaker, un outil développé par Netflix, et son concept. Nous allons ensuite créer un pipeline pour déployer automatiquement une application dockerisée sur Kubernetes, et la surveiller avec Prometheus.\n\n**Niveau**\n\nIntermédaire",
+	"title": "🇫🇷 Continuous Delivery de mes conteneurs en production ",
+	"toTime": "2018-06-26 17:20",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 17:25",
+	"id": "cc-2dbupikvdjkvp4b2vu1arlpsc3",
+	"room": "Salle 2",
+	"speakers": [{
+		"id": "bvouillaume8ab33875da2749288626dd6455d00101",
+		"name": "Benjamin  Vouillaume"
+	}],
+	"summary": "**Pitch**\n\nCherchant à réduire la forte charge générée par des batchs nocturne sur une infrastructure, et n’ayant pas la possibilité d’utiliser le Cloud, nous avons cherché à utiliser les seules ressources à notre disposition: les workstations.\nNotre objectif: Utiliser les ressources de ces machines la nuit pour nos traitements, tout en conservant leur intégrité pour un usage normal le jour.\nEntre les problématiques de provisionnement des machines physiques, de volatilité des ressources et de leur utilisation, ainsi que la diversité des différents use-cases, nous vous proposons de suivre notre réflexion autour de l’ephemeral computing (Eph-C) combiné à l’orchestration.\n\n**Niveau**\n\nIntermédiaire",
+	"title": "🇫🇷 Ressources éphémères et Orchestration: Mettons nos workstations au travail ! ",
+	"toTime": "2018-06-26 17:45",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 11:00",
+	"id": "cc-49dmf86qt3vthf51qmh46ae9f8",
+	"room": "Salle 3",
+	"speakers": [{
+		"id": "asibireve39fdd4749064012b7e9233c7fa5f44d",
+		"name": "Andrey Sibirev"
+	}],
+	"summary": "\n**Pitch**\nThis talk is about what lies at the foundation of Dropbox infrastructure – its orchestration engine &amp; the runtime environment. I won’t be revealing secret mind-blowing technologies or black magic tricks – but rather tell you how we build reliable infrastructure to power products that people trust.\n\nThis talk will touch on several foundational components of Dropbox’s infrastructure platform – which is used to manage the whole Dropbox server fleet starting from hardware provisioning to package management to distribution to runtime environment. Specifically, I’m going to chat about the service delivery and runtime systems and cover the following topics:\n\n- Their origins: novel-for-their-time design ideas from before the containers era and why some of it still makes sense – like a torrent-based image registry.\n- Their evolution: how we transform these systems to embrace modern infrastructure trends such as containers, code as the source of truth &amp; immutable infrastructure.\n- Their future: what challenges we anticipate and what we’d like our infrastructure to look like in the coming years – and, most importantly, how do we move fast without breaking things.\n\n**Niveau**\n\n\nConfirmé",
+	"title": "🇬🇧 Bedrock of Dropbox ",
+	"toTime": "2018-06-26 11:45",
+	"type": "REX"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 11:50",
+	"id": "cc-4ck49lbtv9qe3toa1c8taq5hn8",
+	"room": "Salle 3",
+	"speakers": [{
+		"id": "abeslic914c27894a574b0e9ce9731a0db39f6c",
+		"name": "Alexandre Beslic"
+	}],
+	"summary": "**Pitch**\n\n\"Orchestrating containers in a cluster is now an accessible task thanks to projects such as Kubernetes, Mesos, Docker Swarm mode or Nomad. Meanwhile, have you ever wondered why these tools occasionally fail? Why some of these tools are harder to deploy than others? Why they require very special care in choosing the topology and underlying network and infrastructure?\n\nAll of these systems have a very similar architecture: they use a Consensus based mechanism (majority of nodes agrees on a change) to spread metadata in the cluster about nodes and running containers. You will often observe that they use either Zookeeper or Etcd as a store of key/value metadata. They also used predefined roles for machines such as Manager or Agent, with generally a much larger number of Agents (pulling tasks to execute) than Managers (responsible for the scheduling process and managing the cluster of nodes).\n\nWhile such an architecture makes it easier for developers and administrators to reason about the system (everything is ordered in a strict timeline, ie. a cluster of machines behaves as a single machine), it generates a few downsides. When losing what is called a quorum (ie. losing a majority of Manager nodes), existing containers keep running but the orchestration system becomes unavailable and no more containers could be scheduled. Additionally, in an unreliable network environment (ie. Shared infrastructure or Cloud), the system could be struck by a network partition or fail to deliver and receive acknowledgments for messages sent due to high latency, thus creating periods of infrastructure unavailability.\n\nIn this talk, we will be exploring ways to make orchestration systems more reliable and easier to deploy through decentralization, exploring Multi-Agent (self-organizing) systems and the use of Conflict-Free Replicated Datatypes to spread metadata in the cluster. We will introduce different categories of consistency guarantees and explain why Causal Consistency (as opposed to Consensus/Strong Consistency, which is currently used in the current generation of orchestration tools) may be sufficient to schedule and orchestrate containers in a cluster.\n\nWe will demonstrate an example of such a system and try out different failure modes. We will finally explain the downsides of decentralization, and why this may require new tooling and strategies to administer and debug transient failures in the system.\n\nThe end-goal is to spark a discussion on how we could improve upon existing solutions and create tomorrow’s next generation of container orchestration tools.\"\n\n\n**Niveau**\n\nConfirmé",
+	"title": "🇫🇷 Improving on the reliability and operational complexity of container orchestration systems",
+	"toTime": "2018-06-26 12:35",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 14:00",
+	"id": "cc-52tqokskc2khtq7lnk0pjf678v",
+	"room": "Salle 3",
+	"speakers": [{
+		"id": "jdevoucoux385a179dff744e72b4e91ceac511cf2e",
+		"name": "Jérôme  Devoucoux"
+	}],
+	"summary": "**Pitch**\n\nAssez naturellement, les microservices s’installent dans le paysage informatique moderne. Si Docker s’est imposé, du moins pour le moment, la guerre des orchestrateurs fait rage avec en tête Kubernetes qui domine, fort de soutiens solides, mais cela ne veut pas dire que les autres solutions ne sont pas valables, loin de là, Nomad en est un parfait exemple. Chez Jin nous avons expérimenté Kubernetes en prod comme premier choix, puis nos compétences devops venant à s’enrichir, nous avons été amenés à vouloir comprendre les rouages de nos outils pour mieux gérer nos infrastructure, et capitaliser nos connaissances sur des ressources réutilisables. C’est ainsi que la suite Hashicorp s’est présentée à nous.\n\n\n**Niveau**\n\nConfirmé",
+	"title": "🇫🇷 Hashicorp Nomad - Une architecture microservices lean en Prod ",
+	"toTime": "2018-06-26 14:20",
+	"type": "REX"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 14:25",
+	"id": "cc-711h09k0f7eftbhkiqiseha10k",
+	"room": "Salle 3",
+	"speakers": [{
+		"id": "bassmannc3738d2a6d734f16a6d2476f84560287",
+		"name": "Baptiste  Assmann"
+	}],
+	"summary": "**Pitch**\n\nKubernetes is very famous for \"\"orchestrating\"\" containers. With this in mind, it also embeds some \"\"auto-scaling\"\" feature, which can scale a (micro) service deployment based on CPU or memory usage. That said, very few people are aware that Kubernetes can go one step further: scaling a (micro) service based on application layer information (could be response time, number of processing in parallel, etc...).\nThis talk will introduce how people can enforce an application response time SLA using:\n- HAProxy as an ingress controller, which provide both load-balancing / reverseproxying + monitoring of the (micro) service response time\n- Prometheus to collect the statistic data and format it- Kubernetes custom API endpoint to present Prometheus data inside the Kubernetes cluster\n- Kubernetes Horizontal Pod Autoscaller, which can take scale in / scale out decisions based on monitoring information available in the kubernetes custom API endpoint (the one polled from Prometheus, which itself polls it from HAProxy\n- Kubernetes Ingress controller, to close the loop, that will re-configure HAProxy (on the fly) based on the scaling information provided by HPA service \n\nAnd of course, this won't be a slide-ish only presentation, but also a nice live demonstration*\n\n**Niveau**\n\nAvancé",
+	"title": "🇫🇷 Enforcing (micro) service response time on Kubernetes with HAProxy and prometheus",
+	"toTime": "2018-06-26 14:45",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 14:50",
+	"id": "cc-3p51s28cmiju14b6j3mlk6961o",
+	"room": "Salle 3",
+	"speakers": [{
+		"id": "lunbekandt47cebadaea0e4c5b8233b955ea6d4724",
+		"name": "Léo  Unbekandt"
+	}],
+	"summary": "**Pitch**\n\n5 years ago, Docker wasn't even released officially, no orchestration/scheduling tool was existing or mature enough in the open-source world. However, to build such a Platform as a Service hosting company, these services are required.\n\nThis talk covers how choices have been made while building the Scalingo platform, with the urge of producing a stable, production-ready, third-party applications hosting solution. It includes the emergences of Swarm, Kubernetes and other tools of this changing ecosystem as well as why those tools are not one fit all approaches of containers orchestration, especially when business rules are highly bound to the orchestration itself.\n\n\n**Niveau**\n\nConfirmé",
+	"title": " 🇫🇷 How have we been building a containers-based PaaS these last 5 years? ",
+	"toTime": "2018-06-26 15:35",
+	"type": "REX"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 16:10",
+	"id": "cc-6cid0b34uiiap05lkgjvm5s33t",
+	"room": "Salle 3",
+	"speakers": [{
+		"id": "lricec08cc2ebe5c746ebac229e92d49edfbf",
+		"name": "Liz  Rice"
+	}],
+	"summary": "**Pitch**\n\nWhat is a container? Is it really a “lightweight VM”? What are namespaces and control groups? What does a host machine know about my containers? And what do my containers know about each other? In this talk Liz will live-code a container in a few lines of Go code, to answer all these questions and more, and show you exactly what’s happening under the covers when you run a container. \n\n**Niveau**\n\nAvancé",
+	"title": "🇬🇧 Containers from scratch ",
+	"toTime": "2018-06-26 16:55",
+	"type": "Conf"
+}, {
+	"conferenceId": "cc-20180626",
+	"fromTime": "2018-06-26 17:00",
+	"id": "cc-5098ecrugeqph0g8a1er66gnlk",
+	"room": "Salle 3",
+	"speakers": [{
+		"id": "dlespiau751a8e3d0a5540b297124f6c2d8683a1",
+		"name": "Damien  Lespiau"
+	}],
+	"summary": "**Pitch**\n\nAt Weaveworks, we need more than the L4 load balancing offered today with the Kubernetes Service abstraction. The Service &amp; Endpoint objects have some extraordinary untapped powers: they can be used to build artisanal, high-level load balancing and session affinity schemes. This talk will present modern L7 load balancing, the various possible load balancing architectures in a Kubernetes cluster and demonstrate a tiny reverse proxy implementing service affinity using consistent hashing with bounded load.\n\n**Niveau**\n\nAvancé",
+	"title": " 🇫🇷 Kubernetes L7 Load Balancing Without a Service Mesh",
+	"toTime": "2018-06-26 17:45",
+	"type": "Conf"
+}]
