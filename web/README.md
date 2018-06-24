@@ -40,10 +40,6 @@ $ npm run unit
 $ npm test
 ```
 
-### Configure Firebase application
-
-Edit file [src/Firebase.js](https://github.com/xebia-france/dashboard-conf-companion/blob/master/web/src/Firebase.js) and add your application configuration.
-
 ### Deploy to Firebase Hosting
 
 ```bash
@@ -51,4 +47,13 @@ Edit file [src/Firebase.js](https://github.com/xebia-france/dashboard-conf-compa
 $ node_modules/.bin/firebase login
 # Deploy
 $ npm run deploy
+```
+
+> Application can be built by flavor check [package.json](./package.json); for example:
+
+```bash
+# Build Data X Day
+$ npm run build:dataxday
+# Deploy Data X Day
+$ npm run deploy:dataxday
 ```

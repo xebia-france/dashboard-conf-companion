@@ -11,6 +11,7 @@ Vue.use(VueFire);
 Vue.use(VueResource);
 
 /* eslint-disable no-new */
+// noinspection JSUnusedGlobalSymbols
 new Vue({
   el: '#app',
   router,
@@ -22,18 +23,20 @@ new Vue({
     },
   },
   beforeCreate() {
-    Firebase.auth().onAuthStateChanged((user) => {
-      if (user && user.email.endsWith('xebia.fr')) {
-        this.$router.push(this.$route.fullPath);
-      } else if (user) {
-        user.delete().then(() => {
-          Firebase.auth().signOut().then(() => {
-            this.goToSignIn();
+    if (process.env.FIREBASE_CONFIGURATION.projectId === 'conf-companion') {
+      Firebase.auth().onAuthStateChanged((user) => {
+        if (user && user.email.endsWith('xebia.fr')) {
+          this.$router.push(this.$route.fullPath);
+        } else if (user) {
+          user.delete().then(() => {
+            Firebase.auth().signOut().then(() => {
+              this.goToSignIn();
+            });
           });
-        });
-      } else {
-        this.goToSignIn();
-      }
-    });
+        } else {
+          this.goToSignIn();
+        }
+      });
+    }
   },
 });
