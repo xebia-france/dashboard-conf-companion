@@ -13,7 +13,9 @@
         <table>
           <tr>
             <td class="badge"><span v-if="c.mark">{{c.mark}}</span></td>
-            <td>{{c.comment}}</td>
+            <td>
+              <comment :comment="c.comment" :uid="c.uid"/>
+            </td>
           </tr>
         </table>
       </li>
@@ -24,6 +26,7 @@
 <script>
   import _ from 'lodash';
   import BarChart from '../BarChart';
+  import Comment from './Comment';
 
   export default {
     name: 'talk',
@@ -51,7 +54,7 @@
         };
       },
     },
-    components: {BarChart},
+    components: {Comment, BarChart},
   };
 </script>
 

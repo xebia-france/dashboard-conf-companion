@@ -81,7 +81,13 @@
         });
       },
       transformRating(conf) {
-        _.each(Object.keys(conf), k => this.talks.push({id: k, rating: _.toArray(conf[k])}));
+        _.each(Object.keys(conf), (k) => {
+          const rating = [];
+          _.each(Object.keys(conf[k]), async (uid) => {
+            rating.push({...conf[k][uid], uid});
+          });
+          this.talks.push({id: k, rating});
+        });
       },
     },
     firebase: {
@@ -97,8 +103,6 @@
             this.$http.get(`static/${conferenceId}.json`)
               .then((res) => {
                 this.schedule = res.body;
-                this.setTalkName();
-
                 const conference = dBConferences[conferenceId];
                 this.setParticipantCount(conference);
                 this.transformRating(conference);
