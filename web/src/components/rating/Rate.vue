@@ -22,7 +22,8 @@
                     type="button"
                     class="talk-reset-button"
                     v-on:click="resetTalk(talk)"
-                  >Reset mark & comment</button>
+                  >Reset mark & comment
+                  </button>
                   <textarea
                     v-model="talk.comment"
                     placeholder="Please, leave a comment for speaker, thank you!"
@@ -124,7 +125,7 @@
         conference: {
           source: Firebase.database().ref(`rating/${this.id}`),
           readyCallback(conference) {
-            const uid = Firebase.auth().currentUser.uid;
+            const uid = Firebase.auth().currentUser ? Firebase.auth().currentUser.uid : undefined;
             if (this.id) {
               this.$http.get(`static/${this.id}.json`)
                 .then((res) => {
@@ -190,7 +191,7 @@
 
   .talk-reset-button {
     opacity: 0.8;
-    &:hover, &:focus{
+    &:hover, &:focus {
       cursor: pointer;
       opacity: 1;
     }
