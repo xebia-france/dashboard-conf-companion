@@ -45,8 +45,9 @@ $ npm test
 ```bash
 # You need to be logged
 $ node_modules/.bin/firebase login
-# Deploy
-$ npm run deploy
+# Deploy by flavor
+$ npm run deploy:<flavor>
+# Flavor can be found in package.json 
 ```
 
 > Application can be built by flavor check [package.json](./package.json); for example:
