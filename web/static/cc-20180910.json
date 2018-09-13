@@ -1,0 +1,293 @@
+[{
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 14:05",
+	"id": "cc-0brjcj8bs1hvo2b85iobmt9se2",
+	"room": "7e - Eiffel",
+	"speakers": [{
+		"id": "fcourdier",
+		"name": "Frédéric Courdier"
+	}],
+	"summary": "**Pitch**\nJe propose de présenter une démarche d'accompagnement, du 1er rdv d'avant-vente avec le client jusqu'à la clôture de la mission. Objectifs du slot :\n1. Partager une démarche d’accompagnement et des modèles\n2. Échanger plus précisément sur le contrat de coaching\n\n**Niveau :** Néant\n\n**Pré-requis :** Néant\n\n**Logistique :** Un slot l'après-midi pour les coaches",
+	"title": "Formal - Une démarche d'accompagnement et des modèles",
+	"toTime": "2018-09-10 15:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 15:35",
+	"id": "cc-4q8nku0qdc1dhco848s9iq0ap0",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "qjin",
+		"name": "Qian Jin"
+	}],
+	"summary": "**Pitch**\n\nUne introduction sur comment les technologies du machine learning pour les applications mobiles évoluent ces derniers temps, suivi par un hands-on qui permet de construire une application Android avec ML Kit.\n\n**Niveau**\n\nDébutant\n\n**Pré-requis**\n\n- An account Google\n- A recent version of Android Studio (v3.0+)\n- A physical Android device\n- Basic knowledge of Android development in Java or Kotlin\n- Basic understanding of machine learning models\n\n**Logistique**",
+	"title": "Formal / Hands On : From Mobile first to AI first : Build your first Android application with ML Kit",
+	"toTime": "2018-09-10 17:30",
+	"type": "Hands'On"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 10:05",
+	"id": "cc-23utod7nhf2hob65hfetskt2cg",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "ybenoit",
+		"name": "Yoann Benoit"
+	}, {
+		"id": "maxthom",
+		"name": "maxthom"
+	}],
+	"summary": "**Pitch**\nSession proposée par Maxime Thomas, Solutions Architect chez AWS.\nL'objectif est de découvrir SageMaker, la solution d'AWS pour faire de l'IA.\nContenu de la session : \n- Compréhension du service\n- Création d'une instance SageMaker\n- Utilisation de la version SageMaker de XGBoost\n- Entraînement distribué avec TensorFlow, via le SDK Python de SageMaker\n- Classification d'images avec un modèle ResNet, à entraîner from scratch ou via du Transfer Learning\n \n**Niveau**\nMoyen, une connaissance des algorithmes de ML ou une connaissance d'AWS est un plus\n \n**Pré-requis**\nAvoir un compte AWS Xebia\n \n**Logistique**\nAmener sa machine, non filmé, Xebians uniquement (pas de client)",
+	"title": "Hands-on - IA avec AWS",
+	"toTime": "2018-09-10 12:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 14:05",
+	"id": "cc-3a2t8h879feih99f97gsu7hane",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "achotard",
+		"name": "Alexis Chotard"
+	}],
+	"summary": "**Pitch**\nCe slot se veut être une introduction à Dialogflow et ses concepts tout en étant un retour d'expérience concrêt sur ce que j'ai réalisé avec dans le cadre de la gestion d'accès à la DGX Station.\n\nVous ne connaissez pas Dialogflow ? C'est pour vous ! Vous connaissez Dialogflow mais vous demandez comment gérer la lifetime de vos contextes ? C'est pour vous aussi ! Vous vous demander comment vous vous retrouvez avec votre clé SSH sur la DGX juste en discutant avec un bot sur Slack ? C'est par ici :)\n\n**Niveau**\n\nDébutant\n\n**Pré-requis**\n\nAucun\n\n**Logistique**\n\nAucun",
+	"title": "Formal - Dialogflow : comment j'ai délégué la gestion des accès de la DGX Station à un chatbot",
+	"toTime": "2018-09-10 15:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 12:05",
+	"id": "cc-4568vrrk3f3eo1ci8cjbf68t34",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "ybenoit",
+		"name": "Yoann Benoit"
+	}, {
+		"id": "maxthom",
+		"name": "maxthom"
+	}],
+	"summary": "**Pitch**\n Session proposée par Maxime Thomas, Solutions Architect chez AWS.\n\nDémonstration de reconnaissance de visages sur des modèles \"at edge\" sur la Amazon DeepLens.\n \n**Niveau**\nDébutant\n \n**Pré-requis**\n Aucun\n \n**Logistique**\nAucun, non filmé, Xebians uniquement",
+	"title": "Formal - reconnaissance de visages sur DeepLens",
+	"toTime": "2018-09-10 12:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 11:05",
+	"id": "cc-4mbi4cun8f690reb81qb5j97lf",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "vsegouin",
+		"name": "Vincent Segouin"
+	}],
+	"summary": "**Pitch**\n\nJe propose un retour d’expérience sur la mise en place d'un POC d'Hyperledger Fabric en prenant comme base de réflexion le Use Case qui nous a été proposé par Europ-Assistance et pouvoir en parler dans un cadre qui n'est pas lié à de la crypto-monnaie.\n\nSujet abordé : \n- Le fonctionnement général de la technologie blockchain et la présentation d'Hyperledger Fabric\n- La façon dont j'ai crée le POC répondant au Use Case\n- Les difficultés que j'ai rencontré et comment je les ai résolu (ou pas)\n- Mon avis sur l'application de la blockchain dans le Use Case d'Europ-Assistance et plus généralement les critères qui font que la blockchain puisse être intéressant ou non sur un projet donné.\n \n**Niveau**\n \nTout niveau\n \n**Pré-requis**\n \nRien\n \n**Logistique**\n \nAucune préparation spécifique, juste un retro pour les slide",
+	"title": "Formal - Retour sur une implémentation de HyperLedger Fabric",
+	"toTime": "2018-09-10 12:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 14:05",
+	"id": "cc-171v13jt16sqgjetibgn5bjbjp",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "jnorblin",
+		"name": "Jonathan Norblin"
+	}],
+	"summary": "**Pitch**\n\nGrâce au plugin `docker-maven-plugin` (https://dmp.fabric8.io/), simplifiez vos tests d'intégration grâce à Docker, mais aussi le build et push de vos images applicatives.\n\n**Niveau**\n\nDébutant - connaître Maven et Docker\n\n**Pré-requis**\n\nAucun\n\n**Logistique**\n\nPas filmé",
+	"title": "Formal + Démos : Maven ♡ Docker",
+	"toTime": "2018-09-10 14:35",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 10:05",
+	"id": "cc-5p8b2f9s9230lqsi5c86d4gve1",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "sdecout",
+		"name": "Sylvain Decout"
+	}],
+	"summary": "**Pitch**\nQu'elles soient prises par des comités d'architectes ou par les équipes directement en contact avec le code, le suivi des décisions d'architecture est souvent problématique. Pour des contextes Java, ArchUnit propose une solution par la formalisation de ces décisions sous la forme de tests intégrés à l'application.\nCette présentation vous donnera les éléments pour décider de la pertinence d'ArchUnit dans votre contexte et pour l'y mettre en place en toute simplicité.\n\nAgenda :\n1 . Demo\n2 . Use cases\n3 . IRL\n4 . Feedback\n\n**Niveau**\nTous niveaux\n\n**Pré-requis**\nConnaissance basique de Java\n\n**Logistique**\nVidéoprojecteur",
+	"title": "Demo/Formal - Introduction à ArchUnit",
+	"toTime": "2018-09-10 11:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 14:35",
+	"id": "cc-5pb1ipqhf5qn14t6kuh49v3jl0",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "gmathieu",
+		"name": "gmathieu"
+	}],
+	"summary": "**Pitch**\n\n\"Vous en avez marre des projets sans but qui partent dans tous les sens car le client ne sait pas ce qu'il veut ?\nVous en avez assez de ne pas savoir la valeur que vous apportez dans un projet \"d'envergure\" ?\n\nLes OKR (pour Objectives &amp; Key Result\") sont peut-être la méthode qu'il vous faut !\nParce que ce sont ceux qui font qui savent et qu'il faut respecter l'expertise de chacun pour co-construire des produits qui ont du sens, je vous propose un petit REX de ma vie passée où j'ai mis en place les OKR avec des résultats intéressants.\nJe vous proposerai ensuite de mettre les mains dans le cambouis dans la seconde partie.\n\n**Niveau**\n\nToute personne qui a une activité opérationnelle dans la conception ou la réalisation de produits.\nPas de bagage technique nécessaire, juste une appétence pour faire des choses qui ont du sens ;)\n\n**Logistique**\n\nPlutôt l'après-midi pour que les piwies puissent éventuellement se joindre à nous ?\nJe ramènerai les templates et les post it\nUne douzaine de personnes pour que l'on puisse former des petits groupes de travail pour la seconde partie",
+	"title": "Formal - Pourquoi les devs devraient s'intéresser aux OKR?",
+	"toTime": "2018-09-10 15:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 15:35",
+	"id": "cc-7ab68j8qpc9vr2omvnbjfute3e",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "dbaron",
+		"name": "Damien Baron"
+	}],
+	"summary": "**Pitch**\n\nTravailler entouré de développeurs n'est pas une sinécure tous les jours surtout si on est encore un peu junior et pas issu d'une formation scientifique.\n\nAlors voilà ce slot est dédié à tous les agilistes, les PO, les recruteur/euses, les commerciaux qui bossent au quotidien avec nous et qui pourtant paieraient cher pour avoir un traducteur français / dev et savoir comment manager ces équipes pas vraiment comme les autres.\n\n**Niveau**\n\nTout niveau mais orienté vers les personnes qui font autre chose que du code à Xebia\n\n**Pré-requis**\n\n\n\n**Logistique**\n\nAux orgas: il faudrait planifier ce slot parmi les créneaux de l'après-midi afin que les piwies puissent y assister vu qu'ils sont l'audience cible.",
+	"title": "Formal - Les développeurs sont des cons",
+	"toTime": "2018-09-10 16:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 16:35",
+	"id": "cc-0244lf729dsmcj9nq4g5h32hig",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "kcardoso",
+		"name": "Kathleen Cardoso"
+	}],
+	"summary": "**Pitch**\nPetit hack entre amis: Découvrir et s'initier au Corporate Hacking à travers un jeu d'entreprise pour apprendre à transformer l'entreprise et le travail avec bienveillance.\n\nVous en avez marre du fonctionnement au ralenti de l’entreprise ? Vous en avez marre des réunions en cascade ? Vous trouvez qu’il est toujours compliqué d’entreprendre quoi que ce soit ? Vous trouvez que les projets sont trop longs, que les décisions sont toujours remises en cause ? Vous n’en pouvez plus du système hiérarchique descendant ? Et si on travaillait autrement ?! Découvrez et initiez-vous au Corporate Hacking !\n\n**Niveau :** Néant\n\n**Pré-requis :** Néant\n\n**Logistique :** 10 personnes maximum, un slot l'après-midi pour les coaches",
+	"title": "Contest - Petit hack entre amis",
+	"toTime": "2018-09-10 17:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 09:30",
+	"id": "cc-78q9c01v2dbr2rmugiunmf1abc",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "dpodyachiy",
+		"name": "Dmytro Podyachiy"
+	}, {
+		"id": "njozwiak",
+		"name": "Nicolas Jozwiak"
+	}],
+	"summary": "Présenter la démarche de la review 360 et le pourquoi.\nPrésenter une première implémentation qui sera effectuée au mois de Septembre",
+	"title": "Plénière - La review 360",
+	"toTime": "2018-09-10 10:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 12:35",
+	"id": "cc-c5h36db26cr36b9jcph62b9kckq6cb9p6ksjab9g61h3cchp70p34e1k6k",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [],
+	"summary": "2 mini fougasses par personnes\n\n1 grande salade par personne :\n-Pâtes, légumes grillés, tomates, féta et olives,\n-Salade courgettes grillées, tomates et saumon frais,\n-Salade crudités et thon,\n-Pâtes, poulet, tomates, basilic, mozzarela\n\nAssortiment de desserts",
+	"title": "Déjeuner",
+	"toTime": "2018-09-10 13:30",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 13:35",
+	"id": "cc-3mgdb7o51k435kco29nsg8o20t",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "mohayon",
+		"name": "Michael Ohayon"
+	}, {
+		"id": "bbonnet",
+		"name": "Bastien Bonnet"
+	}, {
+		"id": "jjouanne",
+		"name": "Laetitia Janné"
+	}, {
+		"id": "gmathieu",
+		"name": "gmathieu"
+	}, {
+		"id": "nlaille",
+		"name": "Nicolas Laille"
+	}, {
+		"id": "karchet",
+		"name": "karchet"
+	}, {
+		"id": "mpichou",
+		"name": "mpichou"
+	}],
+	"title": "New Comers",
+	"toTime": "2018-09-10 14:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 17:35",
+	"id": "cc-0pcmnu1ors8v05nlnbhsjevc4n",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [],
+	"title": "Créneau de partage et After XKE",
+	"toTime": "2018-09-10 20:05",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 10:05",
+	"id": "cc-3154q615it6dn4fr7lr3c7ontn",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "flaurain",
+		"name": "François Laurain"
+	}, {
+		"id": "florent",
+		"name": "florent"
+	}],
+	"summary": "**Pitch**\n \nIn this talk, Kafka expert Florent Ramiere will share best practices for monitoring Kafka and the streams of events flowing through it. How to detect duplicates, catch buggy clients, and triage performance issues — in short, how to keep the business’s central nervous system healthy and humming along, all like a Kafka pro. \n \n**Niveau**\n \n**Pré-requis**\n \n\n**Logistique**\nProjecteur\n ",
+	"title": "Formal - (CONFLUENT.IO) Monitor Kafka like a Pro",
+	"toTime": "2018-09-10 11:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 14:35",
+	"id": "cc-129k3ccf5p5gm8rf72itq05ksc",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "ybenoit",
+		"name": "Yoann Benoit"
+	}, {
+		"id": "scivetta",
+		"name": "Simone Civetta"
+	}],
+	"summary": "**Pitch**\nNous avons combiné Deep Learning et Réalité Augmentée dans une application iOS pour de la reconnaissance faciale. \n\nVous découvrirez dans cette présentation le type d'architecture de réseau de neurones utilisé pour faire cette reconnaissance sans avoir besoin de centaines de photos de chaque personne, ainsi que l'utilisation de Core ML pour l'intégration de l'algorithme à une application iOS, et enfin l'incorporation d'une brique de Réalité Augmentée pour afficher du contenu concernant la personne reconnue.\n\n**Niveau**\n\nDébutant\n\n**Pré-requis**\n\nAucun\n\n**Logistique**\n\nRien de particulier",
+	"title": "Formal - Deep Learning & Augmented Reality : Face Recognition on a mobile app",
+	"toTime": "2018-09-10 15:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 12:05",
+	"id": "cc-0eru670uean6oaritqgp7sq8lg",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "hjumeau",
+		"name": "Harry Jumeau"
+	}],
+	"title": "Live coding - Codepush",
+	"toTime": "2018-09-10 12:30",
+	"summary": "**Pitch**\n\nCodepush est un outil qui vous permet de mettre à jours votre application mobile sans passer par les stores.\n\n**Niveau**\n\ndébutant\n\n**Pré-requis**\n\ninstaller XQRCode !",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 11:05",
+	"id": "cc-7ct017uqvrrbc3fllfdsk2fmus",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "jmoulay",
+		"name": "Josselin Moulay"
+	}],
+	"summary": "**Pitch**\nDécouverte de RasaNLU, l'alternative self-hosted a DialogFlow.\nUne petite présentation des fonctionnalités et la création d'un chatbot minimaliste seront au programme.\n\nPlanning :\n1 . Installer RasaNLU\n2 . Créer son premier model\n3 . Mettre a jour le model\n4 . Test du bot\n5 . Conclusion\n\n\n**Niveau**\nPeu importe\n\n**Pré-requis**\nInstaller Docker\nCloner le repo du slot\n\n**Logistique**\nVidéoprojecteur",
+	"title": "Hands on - Introduction à RasaNLU",
+	"toTime": "2018-09-10 12:00",
+	"type": "Hands'On"
+}, {
+	"conferenceId": "cc-20180910",
+	"fromTime": "2018-09-10 15:35",
+	"id": "cc-7u9409pd4520acufcmkso5hjsf",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "aletaxin",
+		"name": "Antoine Le Taxin"
+	}, {
+		"id": "jbclaramonte",
+		"name": "Jean-Baptiste Claramonte"
+	}],
+	"summary": "**Pitch**\nQui sera la meilleure société de livraison par drone ?\nLearn &amp; have fun en codant du serveless dans GCP ! Chaque équipe devra coder et déployer sa Cloud Functions pour répondre à des évènements (Pub/Sub ) de drones virtuelles et s'adapter pour gagner le plus de points. Un dashboard en temps réelle sera là pour rendre compte des déplaçements des drones sur la carte et des scores.\n\n**Niveau**\nDébutant\n\n**Pré-requis**\nNode.JS ou Python \n\n**Logistique**\nGoogle Chrome\nCréer un projet dans GCP Xebia (https://intranet-xebia.atlassian.net/wiki/spaces/XF/pages/75301976/How+To+-+Utiliser+le+compte+Google+Cloud+Platform+de+Xebia)",
+	"title": "Formal + Hands On : A la découverte de Google Cloud Function",
+	"toTime": "2018-09-10 17:30",
+	"type": "Hands'On"
+}]
