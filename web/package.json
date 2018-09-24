@@ -14,9 +14,11 @@
     "build": "node build/build.js",
     "build:dataxday": "FLAVOR=dataxday node build/build.js",
     "build:pcd": "FLAVOR=pcd node build/build.js",
+    "build:frenchkit": "FLAVOR=frenchkit node build/build.js",
     "deploy": "firebase use xke && firebase deploy",
     "deploy:dataxday": "firebase use dataxday && firebase deploy",
-    "deploy:pcd": "firebase use pcd && firebase deploy"
+    "deploy:pcd": "firebase use pcd && firebase deploy",
+    "deploy:frenchkit": "firebase use frenchkit-app && firebase deploy"
   },
   "dependencies": {
     "chart.js": "2.7.1",

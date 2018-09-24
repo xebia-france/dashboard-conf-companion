@@ -1,0 +1,400 @@
+[
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 09:00",
+    "id": "cc-4j3gmuv5sk8bi51h64g4qv0sn6",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "🤗 Welcoming and Breakfast",
+    "toTime": "2018-09-20 09:30",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 09:30",
+    "id": "cc-0s5a972htjs80732uqmn5uc3qc",
+    "kind": "keynote",
+    "speakers": [
+      {
+        "id": "vlerouxcedf4d11eb44429d9af9c23c93ed04f3",
+        "name": "Vincent Leroux"
+      }
+    ],
+    "title": "Opening Keynote",
+    "toTime": "2018-09-20 09:40",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 09:40",
+    "id": "cc-1gh40uo31e3sfbuijmdrrk8uss",
+    "speakers": [],
+    "title": "ELDIM : From Research Laboratories to Mass Production lines for Apple - Vincent Leroux",
+    "toTime": "2018-09-20 09:55",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 09:55",
+    "id": "cc-2goshi764edlrq08bs3rqrqeht",
+    "speakers": [
+      {
+        "id": "pstolk4efbb27ae81e47b39377109776602910",
+        "name": "Pim Stolk"
+      }
+    ],
+    "title": "Going Prod with Server-Side Swift - Pim Stolk",
+    "toTime": "2018-09-20 10:30",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 10:30",
+    "id": "cc-0oqfomjfec3cpokb3rqn8nrq6g",
+    "speakers": [
+      {
+        "id": "fpilletdf3a96bbfd0c40f2a0f23cc0a361366e",
+        "name": "Florent Pillet"
+      }
+    ],
+    "title": "Sharing Swift: writing code that scales - Florent Pillet",
+    "toTime": "2018-09-20 10:45",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 10:45",
+    "id": "cc-0puee47d30gfg2q2vrhqeh4cpv",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "☕ Morning Break",
+    "toTime": "2018-09-20 11:15",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 11:15",
+    "id": "cc-4vd6771phtl5c72pa12vqqegat",
+    "speakers": [
+      {
+        "id": "mhowell5d57cbfe15614a83b20731f226e755d5",
+        "name": "Max  Howell"
+      }
+    ],
+    "title": "Brew create - Max Howel",
+    "toTime": "2018-09-20 11:50",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 11:50",
+    "id": "cc-1dsf8gu8sq8l8qimf0t70i3kdi",
+    "speakers": [
+      {
+        "id": "etolstoidacfd67cd42d48779d1290cfe34ae53e",
+        "name": "Egor Tolstoi"
+      }
+    ],
+    "title": "Developer Experience is the new black - Egor Tolstoi",
+    "toTime": "2018-09-20 12:05",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 12:05",
+    "id": "cc-2igfob4o5bm1lkc29l93fc3hsv",
+    "speakers": [
+      {
+        "id": "abennett96b4353fa6994852a584248fea3fc947",
+        "name": "Andy Bennett"
+      }
+    ],
+    "title": "Why an Investment in Tooling Pays Dividends - Andy Bennet",
+    "toTime": "2018-09-20 12:40",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 12:40",
+    "id": "cc-0lv3ka0ogn37grdum7u41fapmg",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "🧀🍷 Lunch",
+    "toTime": "2018-09-20 14:10",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 14:10",
+    "id": "cc-2t5a4a5s5o1q0c2frcfu0aeo64",
+    "speakers": [
+      {
+        "id": "jsundellf5f508bdbfed4381bb592cc4da6dec8d",
+        "name": "John Sundell"
+      }
+    ],
+    "title": "The Lost Art of System Design - John Sundell",
+    "toTime": "2018-09-20 14:55",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 14:55",
+    "id": "cc-429husok78g6h5i42375g3af9m",
+    "speakers": [
+      {
+        "id": "mzmuda1f3cb6f6e7c64429ae1d32985446dc65",
+        "name": "Mattt Zmuda"
+      }
+    ],
+    "title": "Swift Strings Seven Ways - Mattt",
+    "toTime": "2018-09-20 15:30",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 15:30",
+    "id": "cc-1keg9mfmsklt4nspm4lsqr6jci",
+    "speakers": [
+      {
+        "id": "mhausherrd50699fc044d4e508ed83778fe492d1e",
+        "name": "Mathieu Hausherr"
+      }
+    ],
+    "title": "Image classification in real world : Car rental damage report - Mathieu Hausherr",
+    "toTime": "2018-09-20 15:45",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 15:45",
+    "id": "cc-0r3lomjr3oedu41sr51ho4fq4r",
+    "speakers": [],
+    "title": "We're Sure you're Going To Be Blown Away By This... - Jean-Michel ML",
+    "toTime": "2018-09-20 15:55",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 15:55",
+    "id": "cc-30qsp9be3ummt2lg2u9t45dih1",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "☕ Afternoon Break",
+    "toTime": "2018-09-20 16:35",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 16:35",
+    "id": "cc-747ukv8srvmk3mk40u1jjul6qa",
+    "speakers": [],
+    "title": "Activities",
+    "toTime": "2018-09-20 18:35",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-20 18:35",
+    "id": "cc-101j7vti1ao98maafhpsucnh6i",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "🎉Evening party",
+    "toTime": "2018-09-20 23:00",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 09:00",
+    "id": "cc-62e1j2mhi8ud59brm3bnq398so",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "🤗 Welcoming and Breakfast",
+    "toTime": "2018-09-21 09:30",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 09:30",
+    "id": "cc-18hgs047ai06j777amvm292tg2",
+    "speakers": [
+      {
+        "id": "ceidhof82f889a456b54ea2a97bb072babdefcc",
+        "name": "Chris Eidhof"
+      }
+    ],
+    "title": "The Next 700 Devices - Chris Eidhof",
+    "toTime": "2018-09-21 10:05",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 10:05",
+    "id": "cc-4u19f150s6k193g0pvsa4kkbem",
+    "speakers": [
+      {
+        "id": "kgridina37ad229ff1cf4f44a6b1fd7ab752ea18",
+        "name": "Kateryna Gridina"
+      }
+    ],
+    "title": "Tracking Concepts in the Zalando App - Kateryna Gridina",
+    "toTime": "2018-09-21 10:20",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 10:20",
+    "id": "cc-15qr53e6re5om9tcnpoodp72aa",
+    "speakers": [
+      {
+        "id": "dverwer94149608174946e0bf188b729b4f061c",
+        "name": "Dave Verwer"
+      }
+    ],
+    "title": "Product Management for Independent iOS Developers - Dave Verwer ",
+    "toTime": "2018-09-21 10:55",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 10:55",
+    "id": "cc-5jur5u03v5kdfp09t2lts500hk",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "☕ Morning Break",
+    "toTime": "2018-09-21 11:25",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 11:25",
+    "id": "cc-41ujljrhftv48jgr5fmb934rh3",
+    "speakers": [
+      {
+        "id": "jmacko39df79549af74dc09a70f373bf4f27a4",
+        "name": "Jeffrey Macko"
+      }
+    ],
+    "title": "Automating your API Client Library - Jeffrey Macko",
+    "toTime": "2018-09-21 11:40",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 11:40",
+    "id": "cc-2v2hq7u6k71ilh01b9sbh93v0o",
+    "speakers": [
+      {
+        "id": "sgiddins9a89b95a50c54b1d9f53888830d2701d",
+        "name": "Samuel Giddins"
+      }
+    ],
+    "title": "Answering the Existential Question - Samuel Giddins ",
+    "toTime": "2018-09-21 12:15",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 12:15",
+    "id": "cc-6p1omfd7m5bbmph7rvqf566eaf",
+    "speakers": [
+      {
+        "id": "nlockwoodba8a49f7b0914817b294e09ee24c0721",
+        "name": "Nick Lockwood"
+      }
+    ],
+    "title": "Building a Compiler in Swift - Nick Lockwood",
+    "toTime": "2018-09-21 12:50",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 12:50",
+    "id": "cc-4kplm3mchj8r0u73ct80l2m0e2",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "🧀🍷 Lunch",
+    "toTime": "2018-09-21 14:20",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 14:20",
+    "id": "cc-3s2hns6jqbpaegec0ips72d0pb",
+    "speakers": [
+      {
+        "id": "vpradeilles3cf7ca19eabd4a16bc6df12c8b59ceae",
+        "name": "Vincent Pradeilles"
+      }
+    ],
+    "title": "The Underestimated Power of KeyPaths - Vincent Pradeille ",
+    "toTime": "2018-09-21 14:35",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 14:35",
+    "id": "cc-0qb3s62t8rgaf7un7h8jernh1a",
+    "speakers": [
+      {
+        "id": "ytagaya5a72f090b6a94eb8aac1245ab6f23e68",
+        "name": "Yoichi Tagaya"
+      }
+    ],
+    "title": "Dependency Injection Patterns for iOS Apps - Yoichi Tagaya",
+    "toTime": "2018-09-21 15:10",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 15:10",
+    "id": "cc-4luutms2575vfclmqhqbgr0ck1",
+    "speakers": [
+      {
+        "id": "jpastant7d33caed1fd44bf7b4aa0ab8423e476d",
+        "name": "JC Pastant"
+      }
+    ],
+    "title": "Safe Injection - JC Pastant",
+    "toTime": "2018-09-21 15:25",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 15:25",
+    "id": "cc-43vn3cjo16enpt5sk3j0387tkk",
+    "speakers": [],
+    "title": "TBA - Dimitri Dupuis-Latour ",
+    "toTime": "2018-09-21 15:50",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 15:50",
+    "id": "cc-2e28jppuj97hm0ivovhicl46s7",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "☕ Afternoon Break",
+    "toTime": "2018-09-21 16:20",
+    "type": "keynote"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 16:20",
+    "id": "cc-42o19nriq2acbh2hgv3a91kli6",
+    "speakers": [],
+    "title": "Activities",
+    "toTime": "2018-09-21 18:10",
+    "type": "Talk"
+  },
+  {
+    "conferenceId": "cc-20180920",
+    "fromTime": "2018-09-21 18:10",
+    "id": "cc-772es4drm3cuhoivbt3lq8r1or",
+    "kind": "keynote",
+    "speakers": [],
+    "title": "Closing",
+    "toTime": "2018-09-21 18:20",
+    "type": "keynote"
+  }
+]

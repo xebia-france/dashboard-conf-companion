@@ -53,6 +53,9 @@
         case 'dataxday-cc':
           this.confName = 'Data X Day';
           break;
+        case 'frenchkit-app':
+          this.confName = 'FrenchKit';
+          break;
         default:
           this.confName = 'XKE';
           break;
