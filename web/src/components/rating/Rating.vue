@@ -56,6 +56,9 @@
         case 'frenchkit-app':
           this.confName = 'FrenchKit';
           break;
+        case 'xebicon-c819e':
+          this.confName = 'XebiCon';
+          break;
         default:
           this.confName = 'XKE';
           break;

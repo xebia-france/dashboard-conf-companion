@@ -2,6 +2,8 @@
   "projects": {
     "xke": "conf-companion",
     "dataxday": "dataxday-cc",
-    "pcd": "pcd-cc"
+    "frenchkit": "frenchkit-app",
+    "pcd": "pcd-cc",
+    "xebicon": "xebicon-c819e"
   }
 }

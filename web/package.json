@@ -15,10 +15,12 @@
     "build:dataxday": "FLAVOR=dataxday node build/build.js",
     "build:pcd": "FLAVOR=pcd node build/build.js",
     "build:frenchkit": "FLAVOR=frenchkit node build/build.js",
+    "build:xebicon": "FLAVOR=xebicon node build/build.js",
     "deploy": "firebase use xke && firebase deploy",
     "deploy:dataxday": "firebase use dataxday && firebase deploy",
     "deploy:pcd": "firebase use pcd && firebase deploy",
-    "deploy:frenchkit": "firebase use frenchkit-app && firebase deploy"
+    "deploy:frenchkit": "firebase use frenchkit && firebase deploy",
+    "deploy:xebicon": "firebase use xebicon && firebase deploy"
   },
   "dependencies": {
     "chart.js": "2.7.1",
@@ -57,7 +59,7 @@
     "eslint-plugin-import": "2.7.0",
     "extract-text-webpack-plugin": "3.0.0",
     "file-loader": "1.1.4",
-    "firebase-tools": "3.17.3",
+    "firebase-tools": "^6.1.1",
     "friendly-errors-webpack-plugin": "1.6.1",
     "html-webpack-plugin": "2.30.1",
     "inject-loader": "3.0.0",
