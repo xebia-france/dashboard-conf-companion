@@ -1,0 +1,325 @@
+[{
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 10:05",
+	"id": "cc-37okike9otmksmkqducgj51e32",
+	"room": "7e - Eiffel",
+	"speakers": [{
+		"id": "akinsella",
+		"name": "Alexis Kinsella"
+	}],
+	"summary": "**Pitch**\n \nDécouverte du Edge Computing via l'utilisation d'AWS IoT &amp; AWS Greengrass. Le Hands On utilisera des instances pré-configurées pour faciliter la prise en main des services grâce à des Notebooks Jupyter.\n\nCette session permettra de rôder le Hands On qui sera joué à la XebiCon. Merci aux participants pour l'aide qu'ils pourront m'apporter dans son amélioration.\n \n**Niveau**\n \ndébutant\n \n**Pré-requis**\n \nUn ordinateur\n \n**Logistique**\n \nSalle pour 20 à 30 personnes",
+	"title": "Hands On - Edge Computing et Computer vision avec AWS Greengrass",
+	"toTime": "2018-11-05 12:00",
+	"type": "Hands'On"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 14:35",
+	"id": "cc-210cvvqu74j9p8kdch9k6g7hps",
+	"room": "7e - Eiffel",
+	"speakers": [{
+		"id": "qjin",
+		"name": "Qian Jin"
+	}],
+	"summary": "# Pitch\n\nThis is an Android Things hands-on workshop that showcases:\n\n- how to control different GPIOs on Android Things\n- how to build weather station which reads sensor data, display it and send it to cloud (a fork of the Android Things weather station codelab)\n\n# Commentaire\nCe slot est limité à 20 personnes car il y a seulement 10 starter kits.\n\n# Prerequisite\n- A PC or a Mac with latest Android Studio installed\n- An Android Things starter kit with the latest image installed\n- Basic knowledge of Linux/Unix system\n- Basic knowledge of Android development\n- Basic knowledge of Java or Kotlin",
+	"title": "Build a connected weather station with Android Things & Google Cloud Platform",
+	"toTime": "2018-11-05 16:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 16:35",
+	"id": "cc-588l4bb144lgfl70052utetpcs",
+	"room": "7e - Eiffel",
+	"speakers": [{
+		"id": "mohayon",
+		"name": "Michael Ohayon"
+	}],
+	"summary": "**Pitch**\nDécouvrez \"SaveTheProd\" un petit jeu simple pour la Xebicon. Construit autour d'Android Things et à la suite du Talk de Qian venez tester ce petit mélange d'Android, Vue.js, Firebase et conception hardware !\n  \n**Niveau**\ndébutant\n \n**Pré-requis**\nRien !",
+	"title": "Présentation \"SaveTheProd\", un jeu Android Things pour la Xebicon",
+	"toTime": "2018-11-05 17:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 11:05",
+	"id": "cc-762eta5hj0p71cn2daidg9ec1j",
+	"room": "3e - Salle de vie",
+	"speakers": [{
+		"id": "meckert",
+		"name": "Morgane Eckert"
+	}],
+	"summary": "**Pitch**\nA l'instar du REX de septembre d'Olivier Marquet et Alexandre Kuoch sur leur approche de constitution d'impact teams à la BNP, je voudrai prendre quelques minutes pour partager avec comment j'ai réussi à constituer des feature teams en 3h chez ELS alors que nous nous rencontrions à peine. \n\n**Niveau**\nDébutant\n \n**Pré-requis**\nAucun\n \n**Logistique**\nAucun",
+	"title": "Comment j'ai constitué des Feature Teams chez ELS",
+	"toTime": "2018-11-05 11:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 10:05",
+	"id": "cc-03vokdch1lbeg1qvpditfkbnd1",
+	"room": "3e - Salle de vie",
+	"speakers": [{
+		"id": "ojeanneau",
+		"name": "ojeanneau"
+	}],
+	"summary": "**Pitch**\nS'entraîner par équipe de coach à implémenter l'agilité sur des situations rencontrées. \nAutour de l'expérience terrain, les équipes de coach créent, imaginent, comparent des façons de résoudre des situations difficiles, similaires à ce qu'elles rencontrent au quotidien !\n \n**Niveau**\nCoach\n \n**Pré-requis**\nNéant\n \n**Logistique**\nOn va demander à Olivier Jeanneau qui organise (son compte n'est pas encore visible sur ce tableau).",
+	"title": "Contest - Agilympics",
+	"toTime": "2018-11-05 11:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 12:15",
+	"id": "cc-2m15tuecfelg7ngdudu12f6ecj",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "sbuisson",
+		"name": "Sarah Buisson"
+	}],
+	"summary": "**Pitch**\nEt si le cerveau humain utilisait un algorithme pour la reconnaissance visuelle ?  Explication et comparaison entre le fonctionnement biologique et numérique\n\nSujet pour la Xebicon\n\n**Niveau**\nDébutant\n\n**Pré-requis**\nAucune",
+	"title": "Algorithme de reconnaissance des formes du cerveau humain (repet Xebicon)",
+	"toTime": "2018-11-05 13:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 14:35",
+	"id": "cc-289k57nu13ggu3g653mqho3ttf",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "adergham",
+		"name": "Alexandre Dergham"
+	}],
+	"summary": "**Pitch**\n\nCeci est une répétition du slot que je présenterais pendant la Xebicon.\nJ'y parlerais d'un jeu video que je développe depuis 5 ans basé sur Angular et BabylonJs\n\n**Niveau**\n\nmoyen / expert\n\n**Logistique**\n\n\njuste un projecteur (^_^)",
+	"title": "Comment j'ai développé un jeu vidéo avec des outils de développement web ?",
+	"toTime": "2018-11-05 15:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 16:35",
+	"id": "cc-5oo1n273leiifdsni50nv02dqv",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "horgix",
+		"name": "Alexis Chotard"
+	}, {
+		"id": "jpthiery",
+		"name": "Jean-Pascal Thiery"
+	}],
+	"summary": "**Pitch**\n\nBeaucoup de bruit circule au sujet du projet Intermarché de Publicis.Sapient : trop grosses équipes, client pas content, ... on a tout entendu ! Certaines parties sont vraies, d'autres sont à nuancer, d'autres sont complètement imaginées.\nDans le cadre du rapprochement Xebia / P.S, nous participons à 4 ateliers avec P.S et Intermarché en tant que tiers \"neutre\" afin d'apporter notre avis et de voir ce que nos nouveaux copains font concrêtement.\n\nCe slot sera un résumé/REX des ateliers que nous (Jean-Pascal et Horgix) avons mené, respectivement un sur la CI/CD et l'autre sur l'exploitabilité (monitoring, capacité à être débugué, etc) de la plateforme que P.S ont monté pour Intermarché. C'est l'occasion de découvrir sans tabout ce que nous avons pu constater par nous même !\n \n**Niveau**\n \nDébutant\n \n**Pré-requis**\n \nVenir l'esprit ouvert :)\n \n**Logistique**\n \nNope",
+	"title": "P.S et Intermarché",
+	"toTime": "2018-11-05 17:15",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 15:35",
+	"id": "cc-692o0d6tut3vik3t05scu4ic3a",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "plopez",
+		"name": "Pablo Lopez"
+	}],
+	"summary": "**Pitch**\n \nSlot issu des journées Coding Architect.\nQuand, comme moi, on commence à se faire vieux, on a des sa musette (déjà, on dit musette :) quelques tours pour bien réussir sa mission de conseil (qu'on parle d'audit, d'eXtrem Archi, d'expertise voire tout simplement.... de conseil). Je vous propose de les partager, voire même d'en ajouter quelques uns issus de l'expérience de l'auditoire si nous en avons le temps !\n \n**Niveau**\n \nmoyen \n \n**Pré-requis**\n \nRien\n\n**Logistique**\n \nRAS / Filmé si vous le souhaitez, mais pas sur que ce soit magnifique :)",
+	"title": "Trucs et Astuces missions de conseil",
+	"toTime": "2018-11-05 16:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 12:05",
+	"id": "cc-0qlh0ph13uq07bsojvejpctcoi",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "cdufour",
+		"name": "Charles Dufour"
+	}],
+	"summary": "**Pitch**\n \nLe RGPD est entrée en vigueur le 24 mai 2015 avec les implications que nous connaissons tous (Droit à l'oubli, sécurité par défaut, etc.)\n\nEn parallèle, nous developpons de plus en plus d'architectures autour de l'event sourcing, qui par définition sauvegarde les données de manière immutable.\n\nMais alors comment faire pour concilier une architecture autour de l'event sourcing, immutuable, avec les restrictions imposées par le RGPD ?\nC'est ce que nous allons explorer durant cette session !\n\n \n**Niveau**\n \nmoyen\n \n**Pré-requis**\n \nAucun\n \n**Logistique**\n \nNon filmé",
+	"title": "Event Sourcing et GPDR. Comment faire ? ",
+	"toTime": "2018-11-05 13:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 14:35",
+	"id": "cc-4k3liu1a9fa6qq5o7lcq03s210",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "bdupin",
+		"name": "Benjamin Dupin"
+	}],
+	"summary": "**Pitch**\nImplémentation en live d'un projet en appliquant les principes de l'architecture hexagonale.\n\n**Niveau**\nDébutant\n\n**Pré-requis**\nAucun\n\n**Logistique**\n/",
+	"title": "Live Coding - Hexagonal Architecture",
+	"toTime": "2018-11-05 15:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 17:15",
+	"id": "cc-1nqea081m39prd0ictk78mugdu",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "horgix",
+		"name": "Benjamin Lacroix"
+	}],
+	"summary": "**Pitch**\n \nA la manière slot XKE ayant été réalisé suite à la KubeCon + CloudNativeCon plus tôt dans l'année, je vous présenterai lors de cette demie heure les choses que j'ai pu découvrir lors de la VelocityConf à Londres quelques jours plus tôt : concepts, tendances, outils cools, bref, un moment d'échange autour de tout ça !\n \n**Niveau**\n \nDébutant\n \n**Pré-requis**\n \nRien\n \n**Logistique**\n \nNope",
+	"title": "Retour sur la VelocityConf EU",
+	"toTime": "2018-11-05 17:45",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 11:35",
+	"id": "cc-2rvohk1sp0dgvdi3p016e2881a",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "ldivad",
+		"name": "Loic Divad"
+	}],
+	"summary": "**Pitch**\n \nConfluent est un éditeur proposant des outils autour de l'*event log* Apache Kafka, la confluent plateforme. En plus de cette plateforme partiellement Open Source, l'entreprise a lancé son service cloud. Nous faisons pas mal de Kafka dans nos missions et contributions à Xebia. Il y a-t-il un intérêt fort à savoir parler de cette offre? Je m'attaque à cette question lors d'un petit fast track ou nous coderons une petite application de streaming que nous livrerons sur le cloud. \n \n**Niveau**\n \ndébutant\n \n**Pré-requis**\n \nAucun pré-requis\n \n**Logistique**\n \nAucun besoins",
+	"title": "Kafka As A Service: j'ai testé pour vous Confluent Cloud.",
+	"toTime": "2018-11-05 12:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 09:10",
+	"id": "cc-7t179b74mcjjlkqtrhnop52p1a",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [],
+	"title": "Petit déjeuner",
+	"toTime": "2018-11-05 09:55",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 10:05",
+	"id": "cc-6padsgk07uv0vrqakql9694tji",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "akinsella",
+		"name": "Alexis Kinsella"
+	}],
+	"summary": "Snowflake qui sera sponsor de la XebiCon18 vient nous présenter leur solution avec une partie formelle, ainsi qu'une partie Hands on.\n\nSnowflake est un Datawarehouse construit spécifiquement pour le Cloud (Cloud Native).\n\nIl vient se poser en alternative à BigQuery ou encore Redshift.\n\nIl permet de répondre à des besoins client autour des sujets de Data Lake, de traitement de données type Big Data, ainsi que de traitement DataWarehouse.\n\nDurée: 1h30.\n\nPosition dans le planning: A 10h00 / 11:30 ou 10:30 / 12:00 à préciser (Contraintes horaires des intervenants)",
+	"title": "Présentation Snowflake",
+	"toTime": "2018-11-05 11:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 13:05",
+	"id": "cc-6oigb854rvc4f2i1nrudion393",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [],
+	"summary": "1 salade par personne\n1 plat de lasagnes individuel (variées)\n1 part de gâteau par personne",
+	"title": "Déjeuner",
+	"toTime": "2018-11-05 14:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 14:05",
+	"id": "cc-30to256rk9kkj42llaauduk2qq",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "sfrancel",
+		"name": "Stéphane Francel"
+	}, {
+		"id": "slangonnet",
+		"name": "Stephane Langonnet"
+	}, {
+		"id": "cjulien",
+		"name": "cjulien"
+	}, {
+		"id": "ldussault",
+		"name": "ldussault"
+	}, {
+		"id": "akuoch",
+		"name": "Alexandre Kuoch"
+	}],
+	"title": "Plénière - Newcomers",
+	"toTime": "2018-11-05 14:30",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 17:45",
+	"id": "cc-6il3356b3j1lpb6dqe3p86jh7r",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [],
+	"title": "Créneau de partage et After XKE",
+	"toTime": "2018-11-05 20:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 10:05",
+	"id": "cc-2qdqacs8jfipduk2blf1lk4fn6",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "aletaxin",
+		"name": "Antoine Le Taxin"
+	}, {
+		"id": "jbclaramonte",
+		"name": "Jean-Baptiste Claramonte"
+	}],
+	"summary": "**Pitch**\nQui sera la meilleure société de livraison par drone ?\nLearn &amp; have fun en codant du serveless dans GCP ! Chaque équipe devra coder et déployer sa Cloud Functions pour controler son drone virtuelle et le commander pour gagner le plus de points en allant chercher des paquets et les livrer. Un dashboard en temps réelle sera là pour rendre compte des déplaçements des drones sur la carte et des scores.\n\n**Niveau**\nDébutant\n\n**Pré-requis**\nNode.JS ou Python \n\n**Logistique**\n--",
+	"title": "Formal + Hands On : A la découverte de Google Cloud Function",
+	"toTime": "2018-11-05 12:00",
+	"type": "Hands'On"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 15:35",
+	"id": "cc-59u41g61tingq8888iudkt0odp",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "sdossantos",
+		"name": "Sergio Dos Santos"
+	}],
+	"summary": "# Pitch\nGo channels, async/await, Rx*, modèle acteur... Chaque langage ou plateforme propose un modèle intéressant de programmation asynchrone, parallèle et concurrente. Découvrons ensemble la réponse (toujours expérimentale) proposée par Kotlin et n'hésitons pas à regarder ce qu'il y a sous le capot.\n\n# Prerequisite\nAucun pré-requis au niveau du langage, je ferai un tour rapide des bases du langage avant (si nécessaire).\n\n# Commentaire\n\n\n# Repo Github",
+	"title": "Les Coroutines pour les nuls",
+	"toTime": "2018-11-05 16:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 12:05",
+	"id": "cc-5c3jk4thinrso0iv52nad8d7nv",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "blacroix",
+		"name": "Benjamin Lacroix"
+	}, {
+		"id": "pgdejardin",
+		"name": "Paul-Guillaume Dejardin"
+	}],
+	"summary": "**Pitch**\n \nKotlin est un excellent langage , mais comment le propulser sur son provider cloud favori ? \n\nQue ce soit sur AWS ou GCP cette Konférence vous montrera les techniques, astuces et avantages du langage pour des déploiements en mode IaaS, PaaS et bien sur Serverless. \n\nNous montrerons également, comment Kotlin permet d'écrire du code \"propre\" tout en minimisant le vendor lock-in.\n \n**Niveau**\n \ndébutant / moyen\n \n**Pré-requis**\n \nVidéo-projecteur\n \n**Logistique**\n \nRépétition XebiCon'18",
+	"title": " Kotlin dans ton Cloud",
+	"toTime": "2018-11-05 13:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 15:05",
+	"id": "cc-6q5cdcvn4vg608ghglf5b9suft",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "adeamaral",
+		"name": "Aurore De Amaral"
+	}],
+	"title": "Spark NLP, un an après",
+	"toTime": "2018-11-05 15:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 14:35",
+	"id": "cc-70qjnfbcpl067ft5lm7s9plgoi",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "rsagean",
+		"name": "Romain Sagean"
+	}],
+	"summary": "Depuis quelques années, les notebook ont gagné en popularité. Apache Zeppelin, avec son architecture modulaire, offre une solution de notebook et de dashboarding, le tout sans mettre de côté la sécurité. Cette présentation vous fera découvrir cet outil merveilleux dont vous ne pourrez bientôt plus vous passer.",
+	"title": "Des Notebook en prod avec Zeppelin",
+	"toTime": "2018-11-05 15:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181105",
+	"fromTime": "2018-11-05 16:35",
+	"id": "cc-11ho9qcu9tga63ajo0r71i64o8",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "slequeux",
+		"name": "Sylvain Lequeux"
+	}],
+	"summary": "**Pitch**\n \n\\#Tensorfow #Kubernetes #Love\n \n**Niveau**\n \ndébutant\n \n**Pré-requis**\n \n-\n \n**Logistique**\n \n-",
+	"title": "Kubeflow",
+	"toTime": "2018-11-05 17:30",
+	"type": "Talk"
+}]
