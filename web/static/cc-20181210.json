@@ -1,0 +1,411 @@
+[{
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 12:05",
+	"id": "cc-1m3ddoqip285ri46e97p8pmq73",
+	"room": "3e - Salle de vie",
+	"speakers": [{
+		"id": "selalami",
+		"name": "selalami"
+	}, {
+		"id": "njozwiak",
+		"name": "Nicolas Jozwiak"
+	}],
+	"summary": "**Pitch**\nNous vous proposons de vous faire un retour d'expérience sur des ateliers métiers que nous avons / nous menons à la FDJ sur des use case Data Science. L'idée est de partager le déroulé de nos ateliers d'idéations et de présenter la méthodologie pour appliquer la Data Science.\nNous évoquerons notamment le découpage en stories et le travail étroit avec le métier\n\n**Niveau**\nDébutant \n\n**Pré-requis**\nVenez comme vous êtes avec et sans complexe. \n\n**Logistique**\nChaises et PAS D'ORDINATEUR",
+	"title": "Rex Data Science agile",
+	"toTime": "2018-12-10 13:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 10:05",
+	"id": "cc-43ei702o8asut6012rrtlp5h0i",
+	"room": "3e - Salle de vie",
+	"speakers": [{
+		"id": "kcardoso",
+		"name": "Kathleen Cardoso"
+	}],
+	"summary": "**Pitch**\nPetit hack entre amis: Découvrir et s'initier au Corporate Hacking à travers un jeu d'entreprise pour apprendre à transformer l'entreprise et le travail avec bienveillance.\n\nVous en avez marre du fonctionnement au ralenti de l’entreprise ? Vous en avez marre des réunions en cascade ? Vous trouvez qu’il est toujours compliqué d’entreprendre quoi que ce soit ? Vous trouvez que les projets sont trop longs, que les décisions sont toujours remises en cause ? Vous n’en pouvez plus du système hiérarchique descendant ? Et si on travaillait autrement ?! Découvrez et initiez-vous au Corporate Hacking !\n\n**Niveau :** Néant\n\n**Pré-requis :** Néant\n\n**Logistique :** 10 personnes maximum, un slot l'après-midi pour les coaches",
+	"title": "Contest - Petit hack entre amis : Devenez un corporate hacker",
+	"toTime": "2018-12-10 11:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 16:35",
+	"id": "cc-2g5s2lh7478boaqdcee55t3jrk",
+	"room": "3e - Salle de vie",
+	"speakers": [{
+		"id": "cpele",
+		"name": "Christophe Pelé"
+	}],
+	"summary": "**Pitch**\n \n&gt; \"a person's name is, to that person, the sweetest and most important sound\" \n-- D. Carnegie dans \"How to Win Friends and Influence People\".\n\nGoogle connaît votre nom. Mais c'est un service web qui nécessite de s'authentifier en OAuth, un protocole dont l'utilisation présente plusieurs défis. \n\nLors de ce slot, nous allons développer une application Android pour afficher cette information si douce et importante (et nous le ferons bien).\n \n**Niveau**\n \nMoyen : compréhension de code Kotlin et Android\n \n**Pré-requis**\n \nAucun\n \n**Logistique**\n \nSlot filmé",
+	"title": "Formal & Live Coding - OAuth for Android Done Right",
+	"toTime": "2018-12-10 17:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 14:35",
+	"id": "cc-0ikp82arsovt0q2qge1e7qttpo",
+	"room": "3e - Salle de vie",
+	"speakers": [{
+		"id": "mchaaben",
+		"name": "Mohamed Chaaben"
+	}],
+	"summary": "**Pitch:**\nLe serverless est incontestablement une technologie qui a le vent en poupe chez tous les cloud providers. En tant que développeur, on se demande souvent quel outil choisir pour déployer et tester son code à base de Function as a Service. Faut-il utiliser SAM, le framework soutenu par AWS ? Ou bien un framework agnostique tel que Serverless, ou encore pulumi ? Quid de leur capacités, leur maturité ?\nAu programme:\nla session commencera par une petite présentation des architectures Serverless. Puis il aura une application de traduction des flux Rss en MP3 pour prendre en main un des outils évoqués dans le pitch.\nEnfin, on débridera sur les avantages/inconvénients de chaque outils  \nAu menu:\nAWS(Lambda, Cloudwatch, IAM, dynamoDB, S3, API gateway, Polly)\nServerless framework, Sam et Pulumi\net un peu de NodeJs\n\n**Niveau:** Débutant &amp; intermédiaire\n\n**Pré-requis:** Compte AWS (si vous n'avez pas de compte, vous pouvez créer un avec https://intranet-xebia.atlassian.net/wiki/spaces/XF/pages/443678818/Cr+ation+de+mon+compte+Amazon+Web+Service )\n\n**Logistique:** vidéo projecteur",
+	"title": "hands-on - serverless battle",
+	"toTime": "2018-12-10 16:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 11:05",
+	"id": "cc-5i9nam51i32hfh5aoub206tope",
+	"room": "3e - Salle de vie",
+	"speakers": [{
+		"id": "ybenoit",
+		"name": "Yoann Benoit"
+	}, {
+		"id": "abeauchart",
+		"name": "Anne Beauchart"
+	}],
+	"summary": "**Pitch**\n \nPermettre aux organisations d’interroger l’intégralité de leurs données directement à la source, dans des volumétries de plusieurs dizaines de milliards de lignes en quelques millisecondes seulement, c’est le Zero Time to Data.\n\nLa présentation se décomposera en 4 temps :\n- L'analytique en instantané sur toute la donné de l'entreprise - Nouveaux défis pour le Big Data\n- BI, Analytics et Big Data : Principes et solutions \"traditionnelles\"\n- Limites solutions \"traditionnelles\" et introduction au \"Zero Time To Data\" Indexima\n- Revue d'architecture et des 3 innovations Indexima (HyperIndex, Data Space et K-Store).\n- Q/R\n\nPrésentation par le CEO / CTO de Indexima\n \n**Niveau**\n \ndébutant\n \n**Pré-requis**\n \nAucun\n \n**Logistique**\n \nProjecteur",
+	"title": "Formal - Zero Time to Data par Indexima (société exterieure)",
+	"toTime": "2018-12-10 12:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 12:05",
+	"id": "cc-3blro3nutbv456hrej8jdifnps",
+	"room": "7e - Eiffel",
+	"speakers": [{
+		"id": "ldivad",
+		"name": "Loic Divad"
+	}],
+	"summary": "**Pitch**\nIl est souvent question de mettre en avant des apports de la programmation fonctionnelle. Il est aussi fréquent de se demander quand utiliser ces principes ou non. Ces questions je me les repose au cours d’un mob programming qui consiste a Re:Factorer un class entière. Dans cet exercice, je vous propose de passer en revue près de 150 lignes de code minées de var, throw, unit et autres joyeusetés du monde impératif. Ensemble, voyons si nous pouvons faire le tunning un code qui a tout d’une Twingo, pour l’emmener en rang de Maserati. \n\n**Niveau**\nIntermédiaire++ \n\n**Pré-requis**\nConnaissance du langage Scala\n\n**Logistiques**\nPupitre ou bureau pour pouvoir développer",
+	"title": "Livecoding - MOB Programming Fonctionnel",
+	"toTime": "2018-12-10 13:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 10:05",
+	"id": "cc-43buo46487s148ufursb3rao0l",
+	"room": "7e - Eiffel",
+	"speakers": [{
+		"id": "jrousseau",
+		"name": "Joachim Rousseau"
+	}],
+	"summary": "**Pitch**\n\n*Manquerait une partie Java ou un slot de \"formation Scala accélérée. Sans ça, réservé aux connaisseurs de Scala ou aux preux codeurs avec un courage sans faille ; en effet, les compresses à mettre dans le nez et les oreilles ne sont pas fournies =&gt; bref à raffiner selon le public*\nDécouverte d'Akka Stream \"standard\" mais aussi de son GraphDSL. Finie, la tuyauterie des Mario Bross.,  bienvenue dans les flots asynchrones hautement disponibles gérant la contre-pression tout en masquant la complexité de la gestion des processus légers.\n(~~pitch~~lancement ~~sponsorisé~~parrainé par la francophonie)\n\n** Niveau **\n\n - Connaître Java 8 / lambdas\n - Scala : bien connaître les bases. Pas besoin d'être un expert de la FP, mais si débutant en Scala il va falloir être courageux.\n\n** Prérequis **\n\n- Tous : \n    - sbt installé selon un des moyens précisés par https://www.scala-sbt.org/download.html\n    - Intellij ou autre IDE capable de gérer Java 8 ou Scala 2.12 selon votre choix \n    - Java :  TODO...\n    - Scala : TODO...",
+	"title": "Hands-on - Akka Stream",
+	"toTime": "2018-12-10 12:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 16:35",
+	"id": "cc-7mtqq75v22p3kv1qgst06m8192",
+	"room": "7e - Eiffel",
+	"speakers": [{
+		"id": "aphelip",
+		"name": "Alban Phelip"
+	}],
+	"summary": "**Pitch**\nDans l'équipe Big Data de PMU nous avons mis en place GitFlow sur nos projets. Après quelques mois d'expérimentation, nous nous sommes rendu compte que ce système ne nous apportait pas grand chose mais surtout rendait notre stratégie de branching illisible. Nous avons décidé de faire marche arrière.\nL'idée du slot est de présenter GitFlow, faire un retour sur l'expérience que nous avons eu puis échanger sur vos expériences et vos avis sur la question.\n \n**Niveau**\nDébutant\n \n**Pré-requis**\nAucun (si vous avez déjà utilisé Gitflow votre présence serait top :) )\n \n**Logistique**\nPas filmé",
+	"title": "Formal / Debate - Gitflow sur des projets data, on a essayé, on a arrêté",
+	"toTime": "2018-12-10 17:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 14:35",
+	"id": "cc-21hjgos0d0in3h6up484p3ht0h",
+	"room": "7e - Eiffel",
+	"speakers": [{
+		"id": "ponneby",
+		"name": "Peter Onneby"
+	}],
+	"summary": "**Pitch**\n \nClojure est un langage de programmation fonctionnel compilé, multi-plateforme et destiné à la création de programmes sûrs et facilement distribuables.\nDans une série de XKEs nous allons apprendre le minimum de ce language \n et le tooling associé pour pouvoir construire une application web avec des données persistées.\n\nCe slot est dédié au Clojure sur le JVM\n \n**Niveau**\n \ndébutant\n \n**Pré-requis**\n \nJava ...\n \n**Logistique**",
+	"title": "Formal Hands-on - Practical Clojure",
+	"toTime": "2018-12-10 16:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 10:05",
+	"id": "cc-5f3bdl90ofe6rbnpnmk6hum6cb",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "asgirault",
+		"name": "Anne-Sophie Girault"
+	}],
+	"title": "Leadership et Transformation (agile mais pas que)",
+	"toTime": "2018-12-10 11:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 12:05",
+	"id": "cc-5ibklmehspmfip30aclha0gv57",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "plopez",
+		"name": "Pablo Lopez"
+	}],
+	"summary": "**Pitch**\n \nLa méthode des 6 chapeaux de Bono est un atelier ludique / créatif que nous utilisons de plus en plus en ateliers d'eXtrem Architecture. Au delà de la théorie, un peu rébarbative, venez découvrir la mise en application concrète de ce type d'atelier.\n\n \n**Niveau**\n \ndébutant\n\n**Pré-requis**\n \nrien\n \n**Logistique**\n \nok pour tout",
+	"title": "Formal - maitriser l'atelier \"Les 6 chapeaux\"",
+	"toTime": "2018-12-10 12:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 11:05",
+	"id": "cc-1v5d8iohgqc14lo4k16ekrhk2b",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "lseng",
+		"name": "Laurent Seng"
+	}, {
+		"id": "nverscheure",
+		"name": "Noémie Verscheure"
+	}],
+	"summary": "**Pitch**\n Comprenez de façon ludique ce que représentent les Story points à travers des pliages d'avion en papier !\n\n**Niveau**\ndébutant\n \n**Pré-requis**\naucun\n \n**Logistique**\n- Un slot l'après-midi car nous ne serons pas présents le matin\n- 20 personnes maximum\n- Des feuilles de papier A4, de préférence, des feuilles de brouillon (6 feuilles par personne)",
+	"title": "Serious Game - Chiffre-moi un avion",
+	"toTime": "2018-12-10 12:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 15:35",
+	"id": "cc-3ssghl71eunguj172e6co28g8s",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "crochas",
+		"name": "Clément Rochas"
+	}],
+	"title": "Open Space Agile",
+	"toTime": "2018-12-10 17:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 14:35",
+	"id": "cc-20n3u8v4nkeudehepevin996so",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "fcourdier",
+		"name": "Frédéric Courdier"
+	}],
+	"title": "Formal - Présentation de iObeya, Digital Visual Management for Lean & Agile companies (SAFe partner)",
+	"toTime": "2018-12-10 15:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 12:35",
+	"id": "cc-6ka048p2jj2qcstmjb3ifl2v89",
+	"room": "7e - Haussmann",
+	"speakers": [{
+		"id": "ehotte",
+		"name": "Edern Hotte"
+	}],
+	"summary": "**Pitch**\nCassandra a beau être une belle techno, elle vient avec son lot de contraintes. On vous présente rapidement quelques concepts majeurs de Cassandra pour vous expliquer certains problèmes que nous avons rencontré dans notre mission à la BNP, notamment des difficultés liées aux tombstones.\n\n**Niveau**\nIntermédiaire\n\n**Pré-requis**\nRien !",
+	"title": "Formal - Cassandra",
+	"toTime": "2018-12-10 13:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 11:05",
+	"id": "cc-00mgut8qcjsc1vni8bhui6qin8",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "lthenoz",
+		"name": "Laurène Thenoz"
+	}, {
+		"id": "ndufosse",
+		"name": "Nelson Dufossé"
+	}],
+	"title": "Hands On : maitriser l'atelier \"Magic Estimation\"",
+	"toTime": "2018-12-10 12:00",
+	"type": "Hands'On"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 14:35",
+	"id": "cc-4plk5hh4tsa1odg3keleguqssj",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "esiha",
+		"name": "Edouard Siha"
+	}, {
+		"id": "aginiers",
+		"name": "Anthony Giniers"
+	}],
+	"summary": "**Pitch**\n \nQu'est-ce qu'une application réactive ? Pourquoi est-ce nécessaire d'en faire aujourd'hui ? Comment en faire ?\n\nAu travers des principes exposés par le Reactive Manifesto, les aspects Message Driven, Elastic et Resilience sont abordés. Ces principes sont définis pour mener à une exploration/réflexion sur des principes connexes et des moyens d'implémentation de ces principes.\n \nCette présentation a été préparée et jouée pour la formation Coding Architect qui a eu lieu début octobre 2018.\n\n**Niveau**\nmoyen\n\n**Pré-requis**\n \nAucun\n \n**Logistique**\n \nProjecteur",
+	"title": "Formal - Coding Architect - Reactive Applications",
+	"toTime": "2018-12-10 16:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 12:05",
+	"id": "cc-14vipfb5e2c004hlr5p2g5ln4r",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "omarquet",
+		"name": "Olivier Marquet"
+	}],
+	"title": "Tragedy of Craftsmanship",
+	"toTime": "2018-12-10 13:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 10:05",
+	"id": "cc-5unlet5fql9ie2lmkuooj13cgi",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "apiroelle",
+		"name": "Arnaud Piroelle"
+	}],
+	"summary": "**Pitch**\nPetit retour d'expérience sur la migration d'un projet Gradle avec le DSL Kotlin.\nPourquoi et comment migrer? Est-ce vraiment le moment de le faire? Est-ce que ça marche vraiment?\n\nOn essaie de trouver les réponses ensemble.\n\n**Niveau**\nDébutant : Connaissance en Gradle\n\n**Pré-requis**\nAucun\n\n**Logistique**\nN/A",
+	"title": "REX Gradle Kotlin DSL - Le pourquoi du comment !",
+	"toTime": "2018-12-10 11:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 16:35",
+	"id": "cc-5ln5e29jtr4nrvqvh1fl7qf4s9",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "cdufour",
+		"name": "Charles Dufour"
+	}],
+	"summary": "**Pitch**\n \nSCALA ! \nOn arrête de plaisanter, et on entre dans la programmation fonctionnelle. Celle qui fait mal !\n\nLes coroutines de Kotlin, c'est franchement sympa. Malheureusement c'est n'est pas trop fonctionnel comme approche.\n\nAu fait, si en programmation fonctionnelle, on ne peut manipuler que des valeurs, écrire des fonctions pures, ne produire aucun effet de bord, comment fait-on pour lire un fichier ? Pour le parallélisme et la concurrence ?\n \n**Niveau**\n \nexpert\n \n**Pré-requis**\n \nRien\n \n**Logistique**\n \nNA",
+	"title": "Live coding - Scala - Les coroutines c'est has been. La monade IO c'est du costaud",
+	"toTime": "2018-12-10 17:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 09:00",
+	"id": "cc-6p2rr99992s8k2d0s26e4a1ohe",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [],
+	"title": "Petit déjeuner",
+	"toTime": "2018-12-10 09:50",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 09:55",
+	"id": "cc-7jie5a55754t02c0tups5i7giq",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [{
+		"id": "meckert",
+		"name": "Morgane Eckert"
+	}],
+	"title": "Plénière - Morgane",
+	"toTime": "2018-12-10 10:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 13:05",
+	"id": "cc-_ckpm6e1nckqj8p9k68o38c1pc9gj0chpckqjapj2cgqmce34cgog",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [],
+	"summary": "2 mini fougasses par personnes\n1 sandwich chaud (panini) par personne\n1 Part de gâteaux personne",
+	"title": "Déjeuner",
+	"toTime": "2018-12-10 14:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 14:05",
+	"id": "cc-57r624j4tgrmfeg107vl6hv06b",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [],
+	"title": "Plénière - Newcomers",
+	"toTime": "2018-12-10 14:30",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 17:35",
+	"id": "cc-58her5jalfvg517kq4ugj1fq91",
+	"kind": "keynote",
+	"room": "7e - Monceau",
+	"speakers": [],
+	"title": "Créneau de partage et After XKE",
+	"toTime": "2018-12-10 20:00",
+	"type": "keynote"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 10:05",
+	"id": "cc-69lapc5pad5lih3la3cicj8gib",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "bbousquet",
+		"name": "Brice Bousquet"
+	}, {
+		"id": "akinsella",
+		"name": "Alexis Kinsella"
+	}, {
+		"id": "jcfesantieu",
+		"name": "jcfesantieu"
+	}],
+	"summary": "**Pitch**\n \nJean-Charles Fesantieu (Partner Engineer) vient partager avec nous pendant deux heures sur différents sujets liés à GCP:\n\n- Informations sur les certifications GCP qui permettra a ceux qui souhaitent la passer de le faire en mettant toutes les chances de notre côté. (30à 45 environs)\n- Présentera un summary des nouveautés GCP du dernier Google Cloud Next (1h00 environs)\n- Session de questions / réponses en général sur GCP.\n \n**Niveau**\n \nOrienté pour les Xebians qui veulent passer la certification GCP.\n \n**Pré-requis**\n \nVenir avec l'envie d'apprendre et de profiter de la venue d'un expert Cloud de Google :)\n \n**Logistique**\n\nIdéalement, la session cible entre 20 et 30 personnes dans une des deux salles : Haussmann et Eiffel.",
+	"title": "Formal - Session de présentation et d'échange sur GCP / Préparation à la certification GCP avec Jean-Charles Fesantieu de Google: \"Partner Engineer\"",
+	"toTime": "2018-12-10 12:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 12:05",
+	"id": "cc-6d3hro7j1qhc0209fttnqg3lgu",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "mohayon",
+		"name": "Michael Ohayon"
+	}],
+	"summary": "**Pitch**\nDécouvrons ensemble comment communiquent les applis les plus populaires.\nNous verrons les outils à utiliser, ainsi que les différentes manières de rendre lisible en clair les appels réseaux d'applications \"sécurisées\".\nAu menu : HTTPS, CertificatePinning, Apktool et Decompilation\n \n**Niveau**\nDébutant\n\n**Pré-requis**\nRien !",
+	"title": "Sniffing Android HTTPS traffic",
+	"toTime": "2018-12-10 13:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 15:35",
+	"id": "cc-59psrbrmccf87tlui4fdgeg420",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "fzhamil",
+		"name": "fzhamil"
+	}, {
+		"id": "abrebant",
+		"name": "abrebant"
+	}],
+	"summary": "**Pitch** :\nEntre Ocean's Eleven et les Expandables, venez braquer une banque à travers le Design Thinking.\n\nAu mieux: vous ressortez avec les bases du Design Thinking et un moyen de devenir riche.\nAu pire: vous ressortez avec un moyen de devenir riche et une rencontre avec Jérôme Kerviel\n\n**Niveau** :\nPour tous: débutant ou aguerri on n'en a jamais assez d'une séance de créativité\n\n**Pré-requis** :\nAucun (un casier judiciaire vierge éventuellement)\n\n\n**Logistique** :\n- Tables, chaises\n- Un projecteur \n- Des paperboards\n- Des post-it\n- Du matériel de prototypage\n- Des templates imprimés (pour gagner du temps)\n\n\n**Organisation** : limité à 24 personnes !!!!\n(équipes par multiples de 6)",
+	"title": "Découverte du Design Thinking",
+	"toTime": "2018-12-10 17:00",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 14:35",
+	"id": "cc-5u7t5doqhk6fajeld88oogejcr",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "dlim",
+		"name": "Dara Lim"
+	}],
+	"title": "Formal - Les 7 étapes d'un projet Studio, la 6e va vous étonner !",
+	"toTime": "2018-12-10 15:30",
+	"type": "Talk"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 17:05",
+	"id": "cc-65ushe84hdou9q9901hj4s7skb",
+	"room": "7e - Montmartre",
+	"speakers": [{
+		"id": "ndufosse",
+		"name": "Nelson Dufossé"
+	}],
+	"summary": "**Pitch**\nVenez prendre un moment humainement enrichissant au spa. Découvrez les bienfaits de partager nos impressions positives. \nAu programme : des questions de reflexion, de l'écoute appréciative et le meilleur reste une surprise...\n\n**Niveau**\nEnrichissant pour tous ;-) \n\n**Pré-requis**\nVenez comme vous êtes avec et sans complexe. \n\n**Logistique**\nLe moins de table possible et autant de chaises que de personnes.",
+	"title": "Workshop - Revitalisation au spa !",
+	"toTime": "2018-12-10 17:30",
+	"type": "Workshop"
+}, {
+	"conferenceId": "cc-20181210",
+	"fromTime": "2018-12-10 16:35",
+	"id": "cc-173qr1194umf1667hmej0kdoir",
+	"room": "RDC - Studio grande salle",
+	"speakers": [{
+		"id": "ybenoit",
+		"name": "Yoann Benoit"
+	}],
+	"summary": "**Pitch**\nJ'ai réalisé un sondage auprès de toute la data (et pas que), pour qu'on se remette en question et s'améliorer continuellement, sur des thématiques aussi diverses que nos missions, notre visibilité externe, notre vie interne et nos sujets techniques.\n\nJe vous propose une restitution de ce que j'en ai retiré, et surtout de ce qu'on pourrait faire de tout ça.\n\n**Niveau**\ndébutant\n \n**Pré-requis**\naucun\n \n**Logistique**\n- S'assurer qu'il n'y ai aucun slot data en parallèle car cela concerne toute la data (tous les Xebians intéressés viennent bien évidemment)",
+	"title": "REX/Debate - Comment ça va la data ?",
+	"toTime": "2018-12-10 17:30",
+	"type": "Talk"
+}]
