@@ -3,16 +3,14 @@ import VueFire from 'vuefire';
 import VueResource from 'vue-resource';
 import App from './App';
 import router from './router';
-import Firebase from './Firebase';
+import firebase from './firebase';
 
 Vue.config.productionTip = false;
 
 Vue.use(VueFire);
 Vue.use(VueResource);
 
-/* eslint-disable no-new */
-// noinspection JSUnusedGlobalSymbols
-new Vue({
+(() => new Vue({
   el: '#app',
   router,
   template: '<App/>',
@@ -24,19 +22,22 @@ new Vue({
   },
   beforeCreate() {
     if (process.env.FIREBASE_CONFIGURATION.projectId === 'conf-companion') {
-      Firebase.auth().onAuthStateChanged((user) => {
-        if (user && user.email.endsWith('xebia.fr')) {
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user &&
+          (user.email.endsWith('xebia.fr') ||
+            user.email.endsWith('@zeenea.com') ||
+            user.email.endsWith('@publicis.sapient.com'))) {
           this.$router.push(this.$route.fullPath);
         } else if (user) {
           user.delete().then(() => {
-            Firebase.auth().signOut().then(() => {
+            firebase.auth().signOut().then(() => {
               this.goToSignIn();
             });
           });
-        } else {
+        } else if (this.$router.path !== '/auth') {
           this.goToSignIn();
         }
       });
     }
   },
-});
+}))();

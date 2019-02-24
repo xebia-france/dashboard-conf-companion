@@ -52,7 +52,7 @@
 </template>
 
 <script>
-  import Firebase from '../../Firebase';
+  import firebase from '../../firebase';
 
   export default {
     name: 'rate',
@@ -86,7 +86,7 @@
 
         if (talksToUpdate.length > 0) {
           this.loaded = false;
-          const uid = Firebase.auth().currentUser.uid;
+          const uid = firebase.auth().currentUser.uid;
 
           Promise.all(
             talksToUpdate.map((talk) => {
@@ -99,7 +99,7 @@
                 object.mark = talk.rate;
               }
 
-              return Firebase.database()
+              return firebase.database()
                 .ref(`rating/${this.id}/${talk.id}/${uid}`)
                 .set(object);
             }),
@@ -123,9 +123,9 @@
     firebase() {
       return {
         conference: {
-          source: Firebase.database().ref(`rating/${this.id}`),
+          source: firebase.database().ref(`rating/${this.id}`),
           readyCallback(conference) {
-            const uid = Firebase.auth().currentUser ? Firebase.auth().currentUser.uid : undefined;
+            const uid = firebase.auth().currentUser ? firebase.auth().currentUser.uid : undefined;
             if (this.id) {
               this.$http.get(`static/${this.id}.json`)
                 .then((res) => {

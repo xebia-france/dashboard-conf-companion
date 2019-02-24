@@ -7,8 +7,8 @@
 </template>
 
 <script>
-  import FirebaseUi from 'firebaseui';
-  import Firebase from '../Firebase';
+  import * as firebaseui from 'firebaseui';
+  import firebase from '../firebase';
 
   export default {
     name: 'auth',
@@ -16,11 +16,10 @@
       const uiConfig = {
         signInSuccessUrl: `/#${this.$route.query.n}`,
         signInOptions: [
-          Firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         ],
       };
-      // noinspection JSUnresolvedVariable, JSUnresolvedFunction
-      new FirebaseUi.auth.AuthUI(Firebase.auth())
+      new firebaseui.auth.AuthUI(firebase.auth())
         .start('#firebaseui-auth-container', uiConfig);
     },
   };

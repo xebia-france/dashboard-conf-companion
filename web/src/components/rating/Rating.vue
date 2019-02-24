@@ -30,7 +30,7 @@
 
 <script>
   import _ from 'lodash';
-  import Firebase from '../../Firebase';
+  import firebase from '../../firebase';
   import Talk from './Talk';
 
   export default {
@@ -98,7 +98,7 @@
     },
     firebase: {
       conferences: {
-        source: Firebase.database().ref('rating/'),
+        source: firebase.database().ref('rating/'),
         readyCallback(conferences) {
           const dBConferences = conferences.val();
           if (Object.keys(dBConferences).length > 0) {
