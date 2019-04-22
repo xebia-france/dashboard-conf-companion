@@ -1,0 +1,42 @@
+{
+  "name": "web2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build:dataxday": "vue-cli-service build --mode dataxday",
+    "build:frenchkit": "vue-cli-service build --mode frenchkit",
+    "build:pcd": "vue-cli-service build --mode pcd",
+    "build:xebicon": "vue-cli-service build --mode xebicon",
+    "deploy": "firebase use xke && firebase deploy",
+    "deploy:dataxday": "firebase use dataxday && firebase deploy",
+    "deploy:frenchkit": "firebase use frenchkit && firebase deploy",
+    "deploy:pcd": "firebase use pcd && firebase deploy",
+    "deploy:xebicon": "firebase use xebicon && firebase deploy"
+  },
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "core-js": "^2.6.5",
+    "firebase": "^5.10.0",
+    "firebaseui": "^3.5.2",
+    "ky": "^0.10.0",
+    "lodash": "^4.17.11",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.4.2",
+    "vue-router": "^3.0.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "firebase-tools": "^6.7.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
