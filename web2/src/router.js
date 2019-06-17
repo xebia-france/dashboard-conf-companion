@@ -37,5 +37,9 @@ export default new Router({
       props: true,
       component: () => import(/* webpackChunkName: "rate" */ './components/rating/Rate')
     },
+    {
+      path: '/stats',
+      component: () => import(/* webpackChunkName: "stats" */ './stats/Stats'),
+    }
   ],
 });

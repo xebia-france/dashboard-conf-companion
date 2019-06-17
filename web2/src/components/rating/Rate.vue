@@ -1,53 +1,47 @@
 <template>
-  <div>
-    <header></header>
-    <section id="body">
-      <div class="separator"></div>
-      <div class="rating">
-        <h1>Rate your XKE</h1>
-        <p>{{id}}</p>
-        <transition name="fade">
-          <form v-if="loaded && talks.length>0" v-on:submit.prevent="updateTalks(talks)">
-            <ul>
-              <li class="talk" v-for="talk in talks" :key="talk.id">
-                <h3>{{talk.title}}</h3>
-                <div class="talk-mark-line">
-                  <div>
-                    Mark:
-                    <label v-for="rate in [1, 2, 3, 4, 5]" :key="rate">
-                      <input v-model="talk.rate" v-bind:value="rate" type="radio"/> {{rate}}
-                    </label>
-                  </div>
-                  <button
-                    type="button"
-                    class="talk-reset-button"
-                    v-on:click="resetTalk(talk)"
-                  >Reset mark & comment
-                  </button>
-                  <textarea
-                    v-model="talk.comment"
-                    placeholder="Please, leave a comment for speaker, thank you!"
-                  ></textarea>
-                </div>
-              </li>
-            </ul>
-
-            <div class="form-submit">
-              <button type="submit">Submit</button>
+  <div class="rating">
+    <h1>Rate your XKE</h1>
+    <p>{{id}}</p>
+    <transition name="fade">
+      <form v-if="loaded && talks.length>0" v-on:submit.prevent="updateTalks(talks)">
+        <ul>
+          <li class="talk" v-for="talk in talks" :key="talk.id">
+            <h3>{{talk.title}}</h3>
+            <div class="talk-mark-line">
+              <div>
+                Mark:
+                <label v-for="rate in [1, 2, 3, 4, 5]" :key="rate">
+                  <input v-model="talk.rate" v-bind:value="rate" type="radio"/> {{rate}}
+                </label>
+              </div>
+              <button
+                type="button"
+                class="talk-reset-button"
+                v-on:click="resetTalk(talk)"
+              >Reset mark & comment
+              </button>
+              <textarea
+                v-model="talk.comment"
+                placeholder="Please, leave a comment for speaker, thank you!"
+              ></textarea>
             </div>
-          </form>
-          <p class="not-available" v-if="loaded && talks.length===0">Cannot rate event yet.</p>
-        </transition>
-        <transition name="fade">
-          <div v-if="!loaded" class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
-          </div>
-        </transition>
+          </li>
+        </ul>
+
+        <div class="form-submit">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <p class="not-available" v-if="loaded && talks.length===0">Cannot rate event yet.</p>
+    </transition>
+    <transition name="fade">
+      <div v-if="!loaded" class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
       </div>
-    </section>
+    </transition>
   </div>
 </template>
 
@@ -170,8 +164,6 @@
 </script>
 
 <style scoped lang="scss">
-  $main-color: #2c374c;
-
   h1 {
     margin-top: 20px;
   }
@@ -238,26 +230,6 @@
     opacity: .8;
     text-align: center;
     margin-top: 30px;
-  }
-
-  header {
-    background-color: $main-color;
-    width: 100%;
-    height: 125px;
-  }
-
-  #body {
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-    width: 95%;
-    margin: -50px auto 10px auto;
-    background-color: #ffffff;
-    max-width: 800px;
-
-    .separator {
-      height: 10px;
-      width: 100%;
-      background-color: lighten($main-color, 30%);
-    }
   }
 
   .not-available {
