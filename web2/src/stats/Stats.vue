@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div v-if="rateCountOverTime" class="rate-count-over-time">
-      <h2>Rate count over events</h2>
+      <h2>Rating people count over events</h2>
       <line-chart :chart-data="rateCountOverTime"/>
     </div>
   </section>
