@@ -7,11 +7,13 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "build:dataxday": "vue-cli-service build --mode dataxday",
+    "build:agilelaval": "vue-cli-service build --mode agilelaval",
     "build:frenchkit": "vue-cli-service build --mode frenchkit",
     "build:pcd": "vue-cli-service build --mode pcd",
     "build:xebicon": "vue-cli-service build --mode xebicon",
     "deploy": "firebase use xke && firebase deploy",
     "deploy:dataxday": "firebase use dataxday && firebase deploy",
+    "deploy:agilelaval": "firebase use agilelaval && firebase deploy",
     "deploy:frenchkit": "firebase use frenchkit && firebase deploy",
     "deploy:pcd": "firebase use pcd && firebase deploy",
     "deploy:xebicon": "firebase use xebicon && firebase deploy"

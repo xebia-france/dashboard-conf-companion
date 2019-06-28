@@ -56,6 +56,9 @@
         case 'xebicon-c819e':
           this.confName = 'XebiCon';
           break;
+        case 'agilelaval':
+          this.confName = 'AgileLaval';
+          break;
         default:
           this.confName = 'XKE';
           break;
