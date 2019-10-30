@@ -41,12 +41,12 @@
 </script>
 
 <style lang="scss">
-  $main-color: #2c374c;
+  $main-color: #000000;
 
   body {
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: #E6E6E6;
     text-align: center;
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -73,7 +73,7 @@
   }
 
   button {
-    background-color: #2c374c;
+    background-color: #FE414D;
     color: #ffffff;
     padding: 10px 30px;
     border: none;
@@ -97,7 +97,7 @@
     .separator {
       height: 10px;
       width: 100%;
-      background-color: lighten($main-color, 30%);
+      background-color: #FE414D;
     }
   }
 </style>

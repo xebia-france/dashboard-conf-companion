@@ -6,7 +6,7 @@
       <form v-if="loaded && talks.length>0" v-on:submit.prevent="updateTalks(talks)">
         <ul>
           <li class="talk" v-for="talk in talks" :key="talk.id">
-            <h3>{{talk.title}}</h3>
+            <h3><a :id="talk.id" :href="`#${talk.id}`">{{talk.title}}</a></h3>
             <div class="talk-mark-line">
               <div>
                 Mark:
@@ -18,7 +18,7 @@
                 type="button"
                 class="talk-reset-button"
                 v-on:click="resetTalk(talk)"
-              >Reset mark & comment
+              >Reset
               </button>
               <textarea
                 v-model="talk.comment"
@@ -48,6 +48,7 @@
 <script>
   import firebase from '../../firebase';
   import ky from 'ky';
+  import {getId} from "../../util";
 
   export default {
     name: 'rate',
@@ -59,6 +60,13 @@
       };
     },
     methods: {
+      getUserId() {
+        const firebaseUser = firebase.auth().currentUser;
+        if (firebaseUser) {
+          return firebaseUser.uid;
+        }
+        return getId();
+      },
       updateTalks(talks) {
         const talksToUpdate = talks.map((talk) => {
           const talkToUpdate = {
@@ -81,7 +89,6 @@
 
         if (talksToUpdate.length > 0) {
           this.loaded = false;
-          const uid = firebase.auth().currentUser.uid;
 
           Promise.all(
             talksToUpdate.map((talk) => {
@@ -95,11 +102,12 @@
               }
 
               return firebase.database()
-                .ref(`rating/${this.id}/${talk.id}/${uid}`)
+                .ref(`rating/${this.id}/${talk.id}/${this.getUserId()}`)
                 .set(object);
             }),
           ).then(() => {
             this.loaded = true;
+            if ()
             this.$router.push(`/rating/${this.id}`);
           }).catch(() => {
             // eslint-disable-next-line no-alert
@@ -114,22 +122,37 @@
           comment: '',
         }));
       },
+      scrollToTalk() {
+        if (window.location.hash) {
+          const talkId = window.location.hash.substring(1, window.location.hash.length);
+          setTimeout(() => document.getElementById(talkId).scrollIntoView(), 200);
+        }
+      },
     },
     async created() {
       const conference = (await firebase.database().ref(`rating/${this.id}`).once('value')).val();
-      const uid = firebase.auth().currentUser ? firebase.auth().currentUser.uid : undefined;
       if (this.id) {
         const talks = await ky.get(`/${this.id}.json`).json();
         this.talks = talks.map((talk) => {
-          const talkFromDB = conference[talk.id] || {};
-          const feedback = talkFromDB[uid] || {};
+          if (conference) {
+            const talkFromDB = conference[talk.id] || {};
+            if (talkFromDB) {
+              const feedback = talkFromDB[this.getUserId()] || {};
+              return {
+                ...talk,
+                comment: feedback.comment || '',
+                rate: feedback.mark || undefined,
+              };
+            }
+          }
           return {
             ...talk,
-            comment: feedback.comment || '',
-            rate: feedback.mark || undefined,
+            comment: '',
+            rate: undefined,
           };
         });
         this.loaded = true;
+        this.scrollToTalk();
       }
     },
     firebase() {
@@ -137,13 +160,12 @@
         conference: {
           source: firebase.database().ref(`rating/${this.id}`),
           readyCallback(conference) {
-            const uid = firebase.auth().currentUser ? firebase.auth().currentUser.uid : undefined;
             if (this.id) {
               this.$http.get(`${this.id}.json`)
                 .then((res) => {
                   this.talks = res.body.map((talk) => {
                     const talkFromDB = conference.val()[talk.id] || {};
-                    const feedback = talkFromDB[uid] || {};
+                    const feedback = talkFromDB[this.getUserId()] || {};
                     return {
                       ...talk,
                       comment: feedback.comment || '',
@@ -164,6 +186,11 @@
 </script>
 
 <style scoped lang="scss">
+  a {
+    color: initial;
+    text-decoration: none;
+  }
+
   h1 {
     margin-top: 20px;
   }
@@ -179,6 +206,7 @@
   form {
     margin: 20px;
     text-align: left;
+    padding-bottom: 50px;
   }
 
   .talk-mark-line {
@@ -223,6 +251,14 @@
   }
 
   .form-submit {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #000000;
+    padding: 20px 0;
+
     &:hover {
       opacity: 1;
     }
