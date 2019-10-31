@@ -15,6 +15,10 @@ export default new Router({
       },
     },
     {
+      path: '/success/:id',
+      component: () => import(/* webpackChunkName: "success" */ './success/Success'),
+    },
+    {
       path: '/auth',
       component: () => import(/* webpackChunkName: "auth" */ './components/Auth')
     },
