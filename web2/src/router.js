@@ -10,9 +10,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: {
-        name: 'rating',
-      },
+      redirect: process.env.VUE_APP_DEFAULT_ROUTE,
     },
     {
       path: '/success/:id',
