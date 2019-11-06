@@ -72,6 +72,10 @@
 
   .title {
     margin: 10px;
+
+    h3 {
+      margin-bottom: 5px;
+    }
   }
 
   .comment-list {

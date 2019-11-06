@@ -43,22 +43,40 @@
 <style lang="scss">
   $main-color: #000000;
 
+  @font-face {
+    font-family: 'Futura Next';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://static.engineering.publicissapient.fr/fonts/FuturaNext_Book.otf');
+  }
+
   body {
     margin: 0;
     padding: 0;
     background-color: #E6E6E6;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Futura Next', serif;
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Futura Next', serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
     margin: 0;
     padding: 0;
+  }
+
+  h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 
   p {
@@ -79,6 +97,7 @@
     border: none;
     border-radius: 2px;
     text-transform: uppercase;
+    font-family: 'Futura Next', serif;
   }
 
   header {
