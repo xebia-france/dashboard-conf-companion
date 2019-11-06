@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "fr.xebia.xebicon",
+      "sha256_cert_fingerprints": [
+        "4C:21:85:52:F5:C0:E5:1F:5D:D2:11:BC:A1:D8:BA:D8:B3:9C:43:C1:83:A5:11:69:03:09:71:DE:0C:41:EE:64",
+        "03:CF:F4:51:EB:9F:F5:B0:8F:4E:0A:22:4D:6E:74:FA:BA:9A:F1:31:C5:1A:50:7C:46:9E:64:BD:24:01:DA:79",
+        "4F:76:47:14:68:FA:73:04:B5:AD:48:F8:3D:57:CF:14:68:53:AE:7D:FA:D2:91:72:BE:72:C5:74:12:B6:9F:FD"
+      ]
+    }
+  }
+]
