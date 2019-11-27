@@ -228,7 +228,7 @@
   }
 
   .talk-reset-button {
-    background-color: #C1C1C1;
+    background-color: #B4B4B4;
     opacity: 0.8;
 
     &:hover, &:focus {
@@ -258,7 +258,7 @@
     right: 0;
     width: 100%;
     background: #FFFFFF;
-    border-top: 10px solid #E6E6E6;
+    border-top: 10px solid #EEEEEE;
     padding: 20px 0;
     text-align: center;
     margin-top: 30px;

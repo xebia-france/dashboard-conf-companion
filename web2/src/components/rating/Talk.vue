@@ -41,7 +41,7 @@
           datasets: [
             {
               label: '# of vote',
-              backgroundColor: '#c7b299',
+              backgroundColor: '#FE414D',
               data: [
                 _.filter(this.talk.rating, t => t.mark === 1).length,
                 _.filter(this.talk.rating, t => t.mark === 2).length,
@@ -59,6 +59,8 @@
 </script>
 
 <style scoped lang="scss">
+  @import "../../variable";
+
   .talk {
     text-align: left;
     padding: 10px;
@@ -90,7 +92,7 @@
 
   .badge {
     span {
-      background-color: #6C1D5F;
+      background-color: $tertiary-color;
       color: white;
       display: block;
       height: 25px;
@@ -98,7 +100,7 @@
       border-radius: 100%;
       margin-right: 10px;
       text-align: center;
-      line-height: 25px;
+      line-height: 28px;
     }
   }
 </style>
