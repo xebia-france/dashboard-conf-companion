@@ -9,9 +9,9 @@
         <h3 class="ranking__subtitle">{{Object.keys(year)[0]}}'s ranking</h3>
         <ol class="ranking__list">
           <li
-            v-for="rank in year[Object.keys(year)[0]]"
+            v-for="(rank, index) in year[Object.keys(year)[0]]"
             class="ranking__element"
-            :key="rank.title"
+            :key="rank.title+index"
           >
             {{rank.title}} ({{rank.average}}) - {{rank.markCount}} {{rank.markCount > 1 ? 'votes' : 'vote'}}
           </li>
@@ -33,7 +33,7 @@
         ranking: [],
       };
     },
-    async created() {
+    created: async function () {
       const conferences = (await firebase.database().ref('rating').once('value')).val();
 
       function toObject() {
@@ -48,13 +48,20 @@
         const average = Object.keys(conferences)
           .map(conferenceId => ({
             [conferenceId]: Object.keys(conferences[conferenceId])
-              .map(talkId => ({
-                id: talkId,
-                total: Object.keys(conferences[conferenceId][talkId])
-                  .reduce((accumulator, currentValue) =>
-                    accumulator + conferences[conferenceId][talkId][currentValue].mark, 0),
-                markCount: Object.keys(conferences[conferenceId][talkId]).length
-              }))
+              .map(talkId => {
+                return {
+                  id: talkId,
+                  total: Object.keys(conferences[conferenceId][talkId])
+                    .reduce((accumulator, currentValue) => {
+                      let mark = conferences[conferenceId][talkId][currentValue].mark;
+                      if (!mark) {
+                        mark = 0
+                      }
+                      return accumulator + mark;
+                    }, 0),
+                  markCount: Object.keys(conferences[conferenceId][talkId]).length
+                }
+              })
               .map(talk => ({
                 average: (talk.total / talk.markCount).toFixed(2),
                 ...talk,
