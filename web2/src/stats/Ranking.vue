@@ -98,7 +98,7 @@
             ({[year]: groupByYear[year].sort((a, b) => a.average > b.average ? -1 : 1)}))
           .reduce(toObject(), {});
         this.ranking = Object.keys(sort)
-          .map(year => ({[year]: sort[year].slice(0, 30)}))
+          .map(year => ({[year]: sort[year].slice(0, 50)}))
           .sort((a, b) => parseInt(Object.keys(a)[0], 10) > parseInt(Object.keys(b)[0], 10) ? -1 : 1);
       }
     },
