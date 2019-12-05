@@ -15,6 +15,7 @@
       <h2>Rating people count over events</h2>
       <line-chart :chart-data="rateCountOverTime"/>
     </div>
+    <Loader :loading="!events && !rateCountOverTime"/>
   </section>
 </template>
 
@@ -22,10 +23,11 @@
   import _ from 'lodash';
   import firebase from '../firebase';
   import LineChart from './LineChart.vue';
+  import Loader from "../loader/Loader";
 
   export default {
     name: 'Stats',
-    components: {LineChart},
+    components: {Loader, LineChart},
     data() {
       return {
         rateCountOverTime: null,
