@@ -23,7 +23,7 @@ const getConferenceName = () => {
     case 'agilelaval':
       return 'AgileLaval';
     default:
-      return 'XKE';
+      return 'KED';
   }
 };
 
