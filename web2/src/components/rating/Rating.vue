@@ -71,7 +71,10 @@
           return;
         }
         _.each(this.talks, (t, i) => {
-          this.talks[i].title = _.find(this.schedule, t1 => t.id === t1.id).title;
+          const talk = _.find(this.schedule, t1 => t.id === t1.id);
+          if (talk) {
+            this.talks[i].title = talk.title;
+          }
           this.loaded = true;
         });
       },

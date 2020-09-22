@@ -64,7 +64,7 @@
             this.rateCountOverTime.labels.push(key.split("-")[1]);
             this.rateCountOverTime.datasets[0].data.push(Object.keys(participants).length);
           });
-          _.sort(this.events);
+          _.sortBy(this.events);
         });
       }
     },

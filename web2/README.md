@@ -1,4 +1,4 @@
-# Dashboard for Conf Companion Data (Web app) 
+# Dashboard for Conf Companion Data (Web app)
 
 [Conf Companion](https://conf-companion.firebaseapp.com)
 
@@ -16,7 +16,7 @@ $ npm i
 $ npm run serve
 ```
 
-### Production with optimisation (XKE)
+### Production with optimisation (KED)
 
 ```bash
 $ npm run build
@@ -29,7 +29,7 @@ $ npm run build
 $ npx firebase login
 # Deploy by flavor
 $ npm run deploy:<flavor>
-# Flavor can be found in package.json 
+# Flavor can be found in package.json
 ```
 
 > Application can be built by flavor check [package.json](./package.json); for example:
