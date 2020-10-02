@@ -20,27 +20,27 @@
   },
   "dependencies": {
     "chart.js": "^2.9.3",
-    "core-js": "^3.4.7",
-    "firebase": "^7.5.0",
-    "firebaseui": "^4.3.0",
-    "ky": "^0.16.1",
-    "lodash": "^4.17.11",
+    "core-js": "^3.6.5",
+    "firebase": "^7.21.0",
+    "firebaseui": "^4.6.1",
+    "ky": "^0.23.0",
+    "lodash": "^4.17.20",
     "shortid": "^2.2.15",
-    "vue": "^2.6.10",
-    "vue-chartjs": "^3.5.0",
-    "vue-router": "^3.0.3"
+    "vue": "^2.6.12",
+    "vue-chartjs": "^3.5.1",
+    "vue-router": "^3.4.3"
   },
   "devDependencies": {
-    "@vue/cli": "^4.1.1",
-    "@vue/cli-plugin-babel": "^4.1.1",
-    "@vue/cli-plugin-eslint": "^4.1.1",
-    "@vue/cli-service": "^4.1.1",
-    "babel-eslint": "^10.0.1",
+    "@vue/cli": "^4.5.6",
+    "@vue/cli-plugin-babel": "^4.5.6",
+    "@vue/cli-plugin-eslint": "^4.5.6",
+    "@vue/cli-service": "^4.5.6",
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.0.1",
+    "eslint-plugin-vue": "^6.2.2",
     "firebase-tools": "^7.9.0",
-    "sass": "^1.23.7",
+    "sass": "^1.26.11",
     "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.6.12"
   }
 }
