@@ -1,8 +1,8 @@
 <template>
   <div id="auth">
     <h1>Welcome !</h1>
-    <p>Only a <span>Xebian/PS</span> can access this resource,<br/>please use your <code>*xebia.fr$,
-      *sapient.com$</code> address.</p>
+    <p>Only a <span>Sapient</span> can access this resource,<br/>please use your <code>*@publicissapient.fr$,
+      *sapient.com$ (Google)</code> address.</p>
     <div id="firebaseui-auth-container"></div>
   </div>
 </template>
