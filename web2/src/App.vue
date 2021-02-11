@@ -21,11 +21,9 @@ import firebase from './firebase';
       if (JSON.parse(process.env.VUE_APP_FIREBASE_CONFIGURATION).projectId === 'conf-companion') {
         firebase.auth().onAuthStateChanged((user) => {
           if (user &&
-            (user.email.endsWith('xebia.fr') ||
-              user.email.endsWith('@zeenea.com') ||
-              user.email.endsWith('@publicis.sapient.com') ||
-              user.email.endsWith('@publicissapient.com') ||
-              user.email.endsWith('@sapient.com'))) {
+            (user.email.endsWith('@xebia.fr') ||
+              user.email.endsWith('@publicissapient.fr') ||
+              user.email.endsWith('@publicissapient.com'))) {
             this.$router.push(this.$route.fullPath).catch(() => {
             });
           } else if (user) {
