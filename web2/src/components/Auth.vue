@@ -2,7 +2,7 @@
   <div id="auth">
     <h1>Welcome !</h1>
     <p>Only a <span>Sapient</span> can access this resource,<br/>please use your <code>*@publicissapient.fr$,
-      *sapient.com$ (Google)</code> address.</p>
+      *@publicissapient.com$ (Google)</code> address.</p>
     <div id="firebaseui-auth-container"></div>
   </div>
 </template>
