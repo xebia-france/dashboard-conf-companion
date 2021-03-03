@@ -23,6 +23,7 @@ import firebase from './firebase';
           if (user &&
             (user.email.endsWith('@xebia.fr') ||
               user.email.endsWith('@publicissapient.fr') ||
+              user.email.endsWith('@publicis.sapient.com') ||
               user.email.endsWith('@publicissapient.com'))) {
             this.$router.push(this.$route.fullPath).catch(() => {
             });
